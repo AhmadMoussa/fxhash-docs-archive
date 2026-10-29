@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-root="../../" data-page="creating-on-fxhash/programming-open-form-genart/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programming Open-form Genart · fxhash docs (archive)</title>
+<meta name="description" content="Practicable notes on seeding open-form generative artworks and crafting interesting projects">
+<meta property="og:title" content="Programming Open-form Genart · fxhash docs (archive)">
+<meta property="og:description" content="Practicable notes on seeding open-form generative artworks and crafting interesting projects">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111113'/%3E%3Cpath d='M10 9h12M10 16h12M10 23h7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="archive-bar"><p><strong>Archived copy</strong> of docs.fxhash.xyz, restored from the
+<a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot of 13 March 2026</a>.
+<span class="archive-extra">Preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a> ·
+<a href="../../about/">About this archive</a></span></p></div>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="../../"><span class="brand-name">fxhash docs</span><span class="brand-tag">archive</span></a>
+  <div class="search" role="search">
+    <span class="search-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+    <input id="search-input" type="search" placeholder="Search the docs" autocomplete="off" spellcheck="false"
+      aria-label="Search the documentation" aria-controls="search-results" aria-expanded="false">
+    <kbd class="search-key" aria-hidden="true">/</kbd>
+    <div id="search-results" class="search-results" role="listbox" hidden></div>
+  </div>
+  <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</header>
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Documentation"><div class="nav-group"><ul><li><a href="../../">Docs Overview</a></li><li><a href="../../quickstart-guide/">Quickstart Guide</a></li></ul></div>
+<div class="nav-group"><p class="nav-label">Creating on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../project-setup-and-development/">Project Setup &amp; Development</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Project Setup &amp; Development"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../project-setup-and-development/project-structure/">Project Structure</a></li><li><a href="../project-setup-and-development/project-template/">Project Template</a></li><li><a href="../project-setup-and-development/cli-setup/">CLI Setup</a></li><li><a href="../project-setup-and-development/cli-reference/">CLI Reference</a></li><li><a href="../project-setup-and-development/fxlens/">fxlens</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../fxhash-api/">fxhash API</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash API"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../fxhash-api/api-overview/">API Overview</a></li><li><a href="../fxhash-api/api-reference/">API Reference</a></li><li><a href="../fxhash-api/fxparams-module/">fxparams module</a></li><li><a href="../fxhash-api/fxparams-api-reference/">fxparams API Reference</a></li><li><a href="../fxhash-api/parameter-definition-specs/">Parameter Definition Specs</a></li><li><a href="../fxhash-api/capture-contexts-and-preview-settings/">Capture Contexts &amp; Preview Settings</a></li></ul></li><li class="has-children open"><div class="nav-row"><a href="./" aria-current="page">Programming Open-form Genart</a><button class="nav-toggle" type="button" aria-expanded="true" aria-label="Show pages in Programming Open-form Genart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="open-form-art-coin-mechanics-and-economics/">Open-form ↔ Art Coin: Mechanics &amp; Economics</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../genart-in-the-browser/">Genart in the Browser</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Genart in the Browser"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../genart-in-the-browser/canvas-element-and-api/">Canvas element &amp; API</a></li><li><a href="../genart-in-the-browser/including-libraries/">Including Libraries</a></li><li><a href="../genart-in-the-browser/responsive-browser-projects/">Responsive Browser Projects</a></li><li><a href="../genart-in-the-browser/deterministic-randomness/">Deterministic Randomness</a></li><li><a href="../genart-in-the-browser/user-input-and-media-exports/">User Input &amp; Media Exports</a></li><li><a href="../genart-in-the-browser/testing-browser-compatibility/">Testing Browser Compatibility</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../releasing-your-project/">Releasing your Project</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Releasing your Project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../releasing-your-project/minting-interface-walkthrough/">Minting Interface Walkthrough</a></li><li><a href="../releasing-your-project/pricing-and-supply/">Pricing and Supply</a></li><li><a href="../releasing-your-project/reserves-and-allow-lists/">Reserves &amp; Allow Lists</a></li><li><a href="../releasing-your-project/licensing-your-project/">Licensing your Project</a></li><li><a href="../releasing-your-project/collaborative-projects/">Collaborative Projects</a></li><li><a href="../releasing-your-project/withdrawing-earnings-on-eth-base-via-splits/">Withdrawing Earnings on ETH/Base via splits</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Collecting on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../../collecting-on-fxhash/platform-overview/">Platform Overview</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Platform Overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../collecting-on-fxhash/platform-overview/primary-market/">Primary Market</a></li><li><a href="../../collecting-on-fxhash/platform-overview/secondary-market/">Secondary Market</a></li><li><a href="../../collecting-on-fxhash/platform-overview/fx-params-and-the-ticketing-system/">fx(params) &amp; the Ticketing System</a></li><li><a href="../../collecting-on-fxhash/platform-overview/allow-lists-and-reserves/">Allow Lists &amp; Reserves</a></li><li><a href="../../collecting-on-fxhash/platform-overview/redeemables/">Redeemables</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../collecting-on-fxhash/collector-tips/">Collector Tips</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Collector Tips"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../collecting-on-fxhash/collector-tips/getting-started-as-a-collector/">Getting Started as a Collector</a></li><li><a href="../../collecting-on-fxhash/collector-tips/token-discovery-tools/">Token Discovery Tools</a></li><li><a href="../../collecting-on-fxhash/collector-tips/towards-curation/">Towards Curation</a></li><li><a href="../../collecting-on-fxhash/collector-tips/market-analysis-and-dynamics/">Market Analysis &amp; Dynamics</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Knowledge Base</p><ul><li class="has-children"><div class="nav-row"><a href="../../knowledge-base/quickstart/">fxhash &amp; Web3</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash &amp; Web3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../knowledge-base/quickstart/decentralization-and-blockchain-tech/">Decentralization &amp; Blockchain Tech</a></li><li><a href="../../knowledge-base/quickstart/multi-chain-integration/">Multi-Chain Integration</a></li><li><a href="../../knowledge-base/quickstart/nfts-and-smart-contracts/">NFTs &amp; Smart Contracts</a></li><li class="has-children"><div class="nav-row"><a href="../../knowledge-base/quickstart/web3-storage/">Web3 Storage</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Web3 Storage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../knowledge-base/quickstart/web3-storage/ipfs/">IPFS</a></li><li><a href="../../knowledge-base/quickstart/web3-storage/onchfs/">ONCHFS</a></li></ul></li><li><a href="../../knowledge-base/quickstart/what-is-generative-art/">What is Generative Art?</a></li><li><a href="../../knowledge-base/quickstart/genart-on-the-blockchain/">Genart on the Blockchain</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../knowledge-base/onboarding/">Onboarding</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Onboarding"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../knowledge-base/onboarding/creating-a-wallet/">Creating a Wallet</a></li><li><a href="../../knowledge-base/onboarding/creating-an-account/">Creating an Account</a></li><li><a href="../../knowledge-base/onboarding/adding-funds-to-your-wallet/">Adding Funds to Your Wallet</a></li><li><a href="../../knowledge-base/onboarding/account-verification/">Account Verification</a></li><li><a href="../../knowledge-base/onboarding/platform-moderation/">Platform Moderation</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../knowledge-base/policies-and-guidelines/">Policies &amp; Guidelines</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Policies &amp; Guidelines"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li class="has-children"><div class="nav-row"><a href="../../knowledge-base/policies-and-guidelines/code-of-conduct/">Code of Conduct</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Code of Conduct"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../knowledge-base/policies-and-guidelines/code-of-conduct/artists-code-of-conduct/">Artists&#x27; Code of Conduct</a></li><li><a href="../../knowledge-base/policies-and-guidelines/code-of-conduct/collectors-code-of-conduct/">Collector&#x27;s Code of Conduct</a></li></ul></li><li><a href="../../knowledge-base/policies-and-guidelines/terms-and-conditions/">Terms and Conditions</a></li><li><a href="../../knowledge-base/policies-and-guidelines/privacy-policy/">Privacy Policy</a></li><li><a href="../../knowledge-base/policies-and-guidelines/safety-notes/">Safety Notes</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../onchfs/">ONCHFS</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in ONCHFS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../onchfs/what-is-onchfs/">What is ONCHFS?</a></li><li><a href="../../onchfs/motivations/">Motivations</a></li><li><a href="../../onchfs/system-overview/">System Overview</a></li><li><a href="../../onchfs/cross-chain-referencing/">Cross-chain Referencing</a></li><li><a href="../../onchfs/limitations/">Limitations</a></li><li><a href="../../onchfs/references/">References</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Find us on Social Media</p><ul><li><a href="https://x.com/fx_hash_" target="_blank" rel="noopener">X (Twitter) <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://warpcast.com/fxhash" target="_blank" rel="noopener">Farcaster <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://discord.gg/fxhash-900333075509149767" target="_blank" rel="noopener">Join the Discord <span class="ext" aria-hidden="true">↗</span></a></li></ul></div>
+<div class="nav-group nav-meta"><p class="nav-label">This archive</p><ul><li><a href="../../about/">About this archive</a></li><li><a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot <span class="ext" aria-hidden="true">↗</span></a></li></ul></div></nav>
+  <div class="scrim" hidden></div>
+  <main id="content" class="main">
+    <nav class="crumbs" aria-label="Breadcrumb"><span>Creating on fxhash</span></nav>
+    <article class="doc">
+      <header class="doc-head"><h1>Programming Open-form Genart</h1><p class="lead">Practicable notes on seeding open-form generative artworks and crafting interesting projects</p></header>
+      <p><em>Building the deterministic randomness of an open-form generative artwork is different from the traditional manner of building a long-form generative artwork. Before tackling this technical resource, learn more open-form genart here.</em></p>
+<hr />
+<p>Similarly to long-form projects, open-form generative artworks still need to be <strong>deterministically random</strong>: the art generating script <strong>should always produce the same output for the same input seed/hash that it derives its randomness off of</strong>.</p>
+<p>The difference with open-form generative art, is that <strong>the art generating script now receives an array of hash strings as input</strong>, rather than a single input hash.</p>
+<figure class="figure"><img src="../../assets/img/FEjKS5GUGZ44fSeQS4F5-Screenshot_2025-05-12_at_02.24.23_1_.webp" alt="" width="952" height="417" loading="lazy" decoding="async"></figure>
+<p><strong>This array is an ordered list of all the elapsed hash strings</strong> associated with the individual tokens that form an evolution lineage.</p>
+<ul>
+<li>New editions collected at the root of a project behave like editions minted from a regular long-form project, they have a simple input hash.</li>
+<li>Editions that are evolved from other editions, receive their own proper new input hash, as well as the hash of their parent, as well as the parent's parent, and so on. In form of an array.</li>
+<li>The last entry in this array is the current edition's assigned hash string.</li>
+</ul>
+<p>As an artist this means that you are now designing a new kind of generative algorithm that leverages multiple randomness generators—each seeded by one of the hash strings in the input array.</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>Conceptually, open-form projects are systems of systems: each minted edition can be thought of as a generator in its own right that serves as a template to spawn new child editions.</p>
+</div></div>
+<p>Before diving into the technical details, check out the open-form simulator below to get a feel for how this works—and try it out for yourself <a href="https://redesign--seedexplorer.netlify.app/" target="_blank" rel="noopener">here</a>:</p>
+<figure class="embed embed-file"><video controls preload="metadata" src="../../assets/media/STorQ8DNpuB6NKkyJWp7-Screen_Recording_2025-05-08_at_14.55.30.mp4"></video></figure>
+<h2 id="api-reference">API Reference<a class="anchor" href="#api-reference" aria-label="Link to this section">#</a></h2>
+<p>Developing an open-form genart project introduces a number of new fields in the API:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Function Signature</th>
+<th>Purpose/Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$fx.lineage</code></td>
+<td><code>string[]</code></td>
+<td>An array of hash strings. One for each of the parents in an evolved edition's lineage of parent tokens.</td>
+</tr>
+<tr>
+<td><code>$fx.depth</code></td>
+<td><code>number</code></td>
+<td>Simply a number that represents the number of parents a minted edition has.</td>
+</tr>
+<tr>
+<td><code>$fx.randAt: (depth: number)</code></td>
+<td><code>number</code></td>
+<td>A random number that's generated by a PRNG seeded by the individual lineage hashes at a given depth.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="usdfx.lineage">$fx.lineage<a class="anchor" href="#usdfx.lineage" aria-label="Link to this section">#</a></h3>
+<p>Open-form genart introduces a new URL schema where an evolved edition receives all of its parent hashes <code>{url}?fxhash={hash}#lineage={parent-hash-0},{parent-hash-1},{parent-hash-2}</code>, in addition to its own hash. In the API you can access the individual parent hashes through the <code>$fx.lineage</code> array:</p>
+<pre class="code"><code>$fx.lineage = [{parent-hash-0}, {parent-hash-1}, {parent-hash-2}, {hash}]</code></pre>
+
+<p><strong>Note that in this array, the last hash in the array is the current edition's hash.</strong></p>
+<h3 id="usdfx.depth">$fx.depth<a class="anchor" href="#usdfx.depth" aria-label="Link to this section">#</a></h3>
+<p>The depth of the current iteration. It encodes the number of parents an iteration has.<br />
+It is always equal to <code>$fx.lineage.length - 1</code></p>
+<pre class="code"><code>$fx.depth: number</code></pre>
+
+<h3 id="usdfx.randat">$fx.randAt()<a class="anchor" href="#usdfx.randat" aria-label="Link to this section">#</a></h3>
+<p>In regular long-form projects <code>$fx.rand()</code> provides a deterministc PRNG that's seeded an individual input hash. Through <code>$fx.randAt()</code> you now have access to multiple PRNGs—one for each of the hashes in a token's lineage, accessible by passing the hash's index into the function.</p>
+<div class="callout callout-warning" role="note" aria-label="Warning"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></span><div class="callout-body">
+<p><strong>$fx.randAt will throw an error (&quot;Invalid depth&quot;) if you try to access a PRNG that doesn't exist.</strong></p>
+</div></div>
+<div class="callout callout-tip" role="note" aria-label="Tip"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body">
+<p><code>$fx.randAt($fx.depth)</code> and <code>$fx.rand()</code> point to the same PRNG, meaning that <code>$fx.rand()</code> is simply the PRNG seeded by the last hash in the lineage, which is basically the latest and current hash. Additionally for <code>$fx.depth == 0</code>  we have <code>$fx.rand()</code>, <code>$fx.randAt(0)</code>, and <code>$fx.randAt($fx.depth)</code> all pointing to the same PRNG.</p>
+</div></div>
+<p>The individual randomness generators provided through <code>$fx.randAt()</code> are independent of each other. Their invocation of one does not advance the random state of another. For example, the two following examples are identical—the ordering of <code>$fx.randAt()</code> only matters for each individual depth index:</p>
+<pre class="code"><code>$fx.randAt(0) // prints 0.11
+$fx.randAt(1) // prints 0.83
+$fx.randAt(0) // prints 0.52</code></pre>
+
+<p>is identical to:</p>
+<pre class="code"><code>$fx.randAt(0) // prints 0.11
+$fx.randAt(0) // prints 0.52
+$fx.randAt(1) // prints 0.83</code></pre>
+
+<p>Each PRNG can also be reset in the following manner:</p>
+<pre class="code"><code>$fx.rand() // 0.4928672278765589
+$fx.randAt($fx.depth) // 0.40502416901290417
+$fx.randAt.reset($fx.depth)
+$fx.rand() // 0.4928672278765589
+$fx.randAt($fx.depth) // 0.40502416901290417</code></pre>
+
+<h3 id="seeding-your-own-prngs-with-usdfx.createfxrandom">Seeding your own PRNGs with $fx.createFxRandom<a class="anchor" href="#seeding-your-own-prngs-with-usdfx.createfxrandom" aria-label="Link to this section">#</a></h3>
+<p>Besides the new open-form specific API fields there is now also a new <code>$fx.createFxRandom</code> function that lets you instantiate your own PRNGs, based on an input hash. This is useful when you want to create an isolated randomness generator, for a specific function or class in your code. Make sure that you check the determinism of your code when doing so, and that the input hash that you are basing this custom PRNG off of is generated in a deterministic manner in your code. This custom PRNG returned behaves just like the regular PRNG fxhash provides.</p>
+<pre class="code" data-lang="JavaScript"><code><span class="kd">let</span><span class="w"> </span><span class="nx">customHash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0x31613e9006c9de9a9ccfcfa263b6b42e1404f3abefcf73e8df2f320c7497852c&quot;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">customRNG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">createFxRandom</span><span class="p">(</span><span class="nx">customHash</span><span class="p">)</span>
+
+<span class="nx">customRNG</span><span class="p">()</span><span class="w"> </span><span class="c1">// 0.4928672278765589</span></code></pre>
+
+<h3 id="caution-with-usdfx.randminter-and-params-in-open-form-projects">Caution with $fx.randminter &amp; params in open-form projects<a class="anchor" href="#caution-with-usdfx.randminter-and-params-in-open-form-projects" aria-label="Link to this section">#</a></h3>
+<div class="callout callout-caution" role="note" aria-label="Danger"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></span><div class="callout-body">
+<p>While the entirety of the fxhash API is exposed within all projects, the $fx.randminter and params fields are not compatible with open-form projects. Hence these parts of the API should not be used, only the fields outlined in this resource. Otherwise the project will behave in a non deterministic manner.</p>
+</div></div>
+<h2 id="developing-open-form-projects-locally-with-fxlens">Developing open-form projects locally with fxlens<a class="anchor" href="#developing-open-form-projects-locally-with-fxlens" aria-label="Link to this section">#</a></h2>
+<p>If you've previously developed a long-form project for fxhash and are familiar with the CLI and fx(lens), getting started on developing an open-form project is as simple as running <code>npx fxhash create</code> from your terminal. A new <strong>open-form</strong> template option will be available.</p>
+<figure class="figure"><img src="../../assets/img/XqRdPr8TheTFHXeYVmRT-Screenshot_2025-05-13_at_15.45.19.webp" alt="" width="866" height="281" loading="lazy" decoding="async"></figure>
+<p>Then navigate into the new directory <code>cd &lt;your_project_folder&gt;</code> and run <code>npx fxhash dev</code>, which will boot up fx(lens) in your browser.</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>If it's your first time developing a project for fxhash, <a href="../project-setup-and-development/">learn all about setting up an fxhash project and the fx(lens) local dev environment here</a>.</p>
+</div></div>
+<p>The structure of an open-form artwork has not changed, it is an index HTML file, an optional CSS style sheet, and a script file that now needs to be configured using the new open-form API. <strong>Your project can still not make networked requests or load in packages from URLs.</strong></p>
+<div class="callout callout-caution" role="note" aria-label="Danger"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></span><div class="callout-body">
+<p>In case you plan to develop and release a regular long-form project in the coming days prior to open-form genart going live on fxhash, you need to prevent the SDK from being updated when running the <code>fxhash dev</code> command that launches fxlens from the terminal.</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p><code>npx fxhash dev --noUpdate</code> : adding the --noUpdate frag prevents updates from being installed when starting the dev server through the terminal.</p>
+</div></div>
+<p>You can also revert to the previous version of the CLI/SDK with the update command and specifying the correct version:</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p><code>npx fxhash update --sdkVersion=0.0.13</code> : installs the last version of the sdk that has no open-form features.</p>
+</div></div>
+</div></div>
+<p>The local dev environment fx(lens) got a new tab that lets you change between the existing “long form” and the new “open form” modes. The UI will help you to explore the lineages of your generative art project. You will see a list of all the hashes. A visual representation of each edition in the lineage. Aswell as a graph visualization of the current tree of generations.</p>
+<figure class="figure"><img src="../../assets/img/Jw6USkHW2sZZBsVnUJT3-image.webp" alt="" width="1256" height="1010" loading="lazy" decoding="async"></figure>
+<p>The individual artworks displayed in the open-form UI are captures and not live running artworks. This is done to avoid potential performance problems in case of the generative artwork requiring heavier computations. When evolving lineages in quick succession through the UI captures are queued are queued in the background, meaning that there's always only one live instance of your artwork running at a given time. <a href="https://html2canvas.hertzen.com/" target="_blank" rel="noopener">html2canvas - Screenshots with JavaScript</a> is used for creating the capture—triggered just as normally when you call <code>$fx.preview()</code> in your code.</p>
+<p>In case you experience problems with captures—please reach out on discord. We are still improving the local capture pipeline.</p>
+<figure class="figure"><img src="../../assets/img/z9QqsRQOoKCxNh9efdH7-Screenshot_2025-05-13_at_15.38.10.webp" alt="" width="1256" height="1046" loading="lazy" decoding="async"></figure>
+<p>By selecting one edition from the tree or graph you will enter the already known live mode of the edition. The graph will highlight the lineage of the node. You can now experiment with different hashes of the edition. In case the edition already has children, these updates will then be propagated accordingly.</p>
+<figure class="figure"><img src="../../assets/img/oQjtYbygaoAeWong2TBA-Screenshot_2025-05-13_at_15.40.09.webp" alt="" width="1256" height="1046" loading="lazy" decoding="async"></figure>
+<h2 id="programming-open-form-genart">Programming open-form genart<a class="anchor" href="#programming-open-form-genart" aria-label="Link to this section">#</a></h2>
+<p>In what follows we provide a couple of examples on how to configure randomness in your open-form project, showcasing how <code>$fx.randAt</code> in combination with <code>$fx.depth</code> can be used for practical purposes. There are a couple of major ways to design open-form mechanics:</p>
+<ol>
+<li><strong>Depth-based Traits</strong>: aspects of the artwork that are directly tied to an minted/evolved edition's depth.</li>
+<li><strong>Root Traits:</strong> a common characteristic based off of the hash string of an edition minted at the root of an open-form project (first in a lineage).</li>
+<li><strong>Inherited Traits (Re-generating Parent Randomness)</strong>: evolved editions inherit traits by recreating/reproducing the random steps parent editions have previously computed.</li>
+<li><strong>Random Mutations</strong>: random traits that appear in evolved editions after a certain depth is reached.</li>
+<li><strong>Completely Random Traits</strong>: using the seed of the current edition (final seed in the seed list).</li>
+</ol>
+<h3 id="depth-based-traits">Depth-based Traits<a class="anchor" href="#depth-based-traits" aria-label="Link to this section">#</a></h3>
+<p>The simplest new mechanic in open-form genart to create an interesting, evolving artwork is by tying visual, or other parameters, of the artwork to the corresponding depth that it's minted at.</p>
+<p>For example, in the open-form simulator, the resolution of the pixel grid (its width and height) can increase as the depth of the longer a token's lineage is.</p>
+<figure class="figure"><img src="../../assets/img/R3IrVh4TEeC0rFaHr7xh-Screenshot_2025-04-23_at_10.34.37.webp" alt="" width="1600" height="289" loading="lazy" decoding="async"></figure>
+<p>And in your code you'd simply use the <code>$fx.depth</code> parameter that's exposed by the API to make this happen.</p>
+<pre class="code" data-lang="JavaScript"><code><span class="c1">// grid dimensions increase by 2 squares every evolution</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">gridWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="o">*</span><span class="mf">2</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">gridHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="o">*</span><span class="mf">2</span>
+
+<span class="c1">// draw your artwork here</span></code></pre>
+
+<p>One idea here could be tying an obvious visual characteristic of the artwork to the depth, so that it's immediately evident what depth the artwork belongs to.</p>
+<h3 id="root-randomness">Root Randomness<a class="anchor" href="#root-randomness" aria-label="Link to this section">#</a></h3>
+<p>Editions minted at the root of a project (that aren't evolved from another edition and don't have a parent) behave like editions collected from a regular long-form generative artwork.  In root mints <code>$fx.rand()</code>, <code>$fx.randAt(0)</code>, and <code>$fx.randAt($fx.depth)</code> will all point to the same PRNG. From an open-form design point-of-view, this <em>root randomness</em> can be used to set lineage defining characteristics.</p>
+<p>For example, let's use this <em>root</em> randomness to select a color palette to be used in whatever graphics we draw next:</p>
+<pre class="code" data-lang="JavaScript"><code><span class="c1">// three distinct color palettes</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">palettes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;#0a0a0a&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f7f3f2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#0077e1&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;#f7f3f2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#0077e1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f5d216&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;#0077e1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f5d216&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#fc3503&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1">// use root randomness to pick a palette</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">palettes</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">palettes</span><span class="p">.</span><span class="nx">length</span><span class="p">)]</span>
+
+<span class="c1">// draw some art here using the palette</span></code></pre>
+
+<p>Keep in mind that the hash string at index 0 of the hash list will be the same for all evolutions/child tokens derived from this root edition. This means that using <code>$fx.randAt(0)</code> in this manner will use same randomness to make a palette selection, whether it's the root edition, or the tenth edition down the lineage—the same palette will be picked.</p>
+<p>In other terms, the root randomness (randomness derived from the index 0 hash) can be used to select lineage defining characteristics. As a simple visual example, this could be the color palette, giving each lineage of the open-form project a unique characteristic:</p>
+<figure class="figure"><img src="../../assets/img/IUbe2HfsayNxVgX8Lqd6-Screenshot_2025-04-23_at_10.31.04.webp" alt="" width="1600" height="1221" loading="lazy" decoding="async"></figure>
+<p>This same concept applies to using <code>$fx.randAt()</code> at any depth, in case you want a certain behavior to emerge at a specific depth.</p>
+<h3 id="re-generating-randomness-trait-inheritance">Re-generating Randomness: Trait Inheritance<a class="anchor" href="#re-generating-randomness-trait-inheritance" aria-label="Link to this section">#</a></h3>
+<p>There is no direct way to pass values from parent editions to child evolutions. However, this is likely a common type of behavior that most projects will aim to implement; where editions pass on traits, characteristics, and variables to their evolutions.</p>
+<p><strong>To achieve this kind of inheritance the open-form script should be designed in such a manner that the evolved editions reproduce the randomness (random selections and randomly generated numbers) that parent tokens have previously computed.</strong></p>
+<p>In practice, this simply boils down to looping over the lineage PRNGs, recomputing the previously made random decisions, and then adding to it with the current edition's randomness. More concretely, we would simply call <code>$fx.randAt</code> in a loop, from <code>0</code> up until the current <code>$fx.depth</code>.</p>
+<p>In the following example we are simply constructing a sentence, such that we add a new randomly selected word with each evolution.</p>
+<pre class="code" data-lang="JavaScript"><code><span class="kd">const</span><span class="w"> </span><span class="nx">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;this&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;is&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;random&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">phrase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+
+<span class="c1">// loop over the hash list</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="o">++</span><span class="p">){</span>
+<span class="w">    </span><span class="c1">// add a word to the phrase at random</span>
+<span class="w">    </span><span class="nx">phrase</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">words</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="p">)]</span>
+<span class="p">}</span></code></pre>
+
+<p>Assuming that our artwork revolves around this constructed sentence in some manner, evolutions will inherit the first part of the sentence that was chained together throughout the preceding lineage, and add their own individual word:</p>
+<pre class="code"><code>gen. 0     gen. 1       gen. 2                 gen. 3
+
+is------&gt;  is this   -&gt; is this random    -&gt;   is this random string
+ |
+ └------&gt;  is random -&gt; is random string  -&gt;   is random string this
+                |
+                └-----&gt; is random this    -&gt;   is random this string</code></pre>
+
+<h3 id="l-system-example">L-system Example<a class="anchor" href="#l-system-example" aria-label="Link to this section">#</a></h3>
+<p>A more complicated setting to exemplify this would be an L-system, in which the string is mutated over the course of the collected and evolved editions. Let's assume a simple alphabet and grammar like the following:</p>
+<pre class="code" data-lang="JavaScript"><code><span class="kd">let</span><span class="w"> </span><span class="nx">alphabet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;C&#39;</span><span class="p">];</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">rules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s1">&#39;A&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;AB&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;AC&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="s1">&#39;B&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;BC&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;BA&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="s1">&#39;C&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;CA&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CB&#39;</span><span class="p">],</span>
+<span class="p">};</span></code></pre>
+
+<p>In this grammar each letter has a couple of replacement options—for an evolved child token we want to choose a replacement option at random and construct a new string that will be the base for the collected edition. The evolution logic would be as follows:</p>
+<pre class="code" data-lang="JavaScript"><code><span class="cm">/*</span>
+<span class="cm">    create an initial base string with n distinct letters</span>
+<span class="cm">    using the root randomness</span>
+<span class="cm">*/</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">baseStringLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">currentString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">baseStringLength</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">    </span><span class="nx">currentString</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">alphabet</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// compute the replacement string depending on the depth</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">replacementString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">currentString</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">replacement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rules</span><span class="p">[</span><span class="nx">currentString</span><span class="p">[</span><span class="nx">n</span><span class="p">]][</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">)]</span>
+<span class="w">        </span><span class="nx">replacementString</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">replacement</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">currentString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">replacementString</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// use the computed string for art purposes in what follows</span></code></pre>
+
+<p>This behavior would look as follows:</p>
+<pre class="code"><code>Iteration 0:            A               B            C
+                    ┌───┴───┐       ┌───┴───┐     ┌──┴──┐
+Iteration 1:        A       B       B       A     C     B
+                  ┌─┴─┐   ┌─┴─┐   ┌─┴─┐   ┌─┴─┐ ┌─┴─┐ ┌─┴─┐
+Iteration 2:      A   B   B   A   B   C   A   C  ...</code></pre>
+
+<h3 id="pitfalls-to-avoid">Pitfalls to avoid<a class="anchor" href="#pitfalls-to-avoid" aria-label="Link to this section">#</a></h3>
+<p>While the API might seem minimal, open-form genart comes with its own complexities; your code always needs to account for the existence—or non-existence—of hashes depending on its mint depth.</p>
+<p><strong>Besides the regular determinism pitfalls that you should avoid —</strong> <a href="../genart-in-the-browser/deterministic-randomness/"><strong>some of which we have outlined here</strong></a> <strong>— there likely are many scenarios that could cause the deterministic evolutionary sequence of your open-form projects to break. Make sure to carefully design your open-form randomness and test your project plenty ahead of release.</strong></p>
+<p>As an example, one scenario that comes to mind are conditional blocks that assume the existence of a specific depth. What's the problem with the following block of code?</p>
+<pre class="code" data-lang="JavaScript"><code><span class="kd">const</span><span class="w"> </span><span class="nx">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;this&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;is&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;random&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">phrase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="o">++</span><span class="p">){</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">4</span><span class="p">){</span>
+<span class="w">        </span><span class="nx">phrase</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">words</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="p">)]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span></code></pre>
+
+<p>Inside of the for loop we're assuming a certain depth/length of the hash list that might not exist yet when the code runs. For the first three minted/evolved editions the loop will simply not do anything, and the phrase string will be remain empty—whereas on the fourth evolution it will do a sudden jump and catch up with the suddenly filled hash list, likely resulting in a random artwork that does not follow the intended open-form progression.</p>
+<h3 id="random-mutations">Random Mutations<a class="anchor" href="#random-mutations" aria-label="Link to this section">#</a></h3>
+<p>In addition to having root traits for individual lineages, as well as traits that are passed on between evolutions,  you'll likely also want to spawn new random traits sometimes.</p>
+<p>This involves adding a small algorithmic chance to make a modification appear at random, at a certain depth. In the open-form simulator there's a small chance for new colors to appear after depth 4 has been reached.</p>
+<figure class="figure"><img src="../../assets/img/jNQHs3JZawbiPIf4jddK-Screenshot_2025-04-23_at_19.39.27.webp" alt="" width="1600" height="1057" loading="lazy" decoding="async"></figure>
+<p>Let's revisit our color palette example from earlier—assuming that we're selecting a base palette with the root randomness, we could randomly append a new color to the selected palette:</p>
+<pre class="code" data-lang="JavaScript"><code><span class="c1">// three distinct color palettes</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">palettes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;#0a0a0a&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f7f3f2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#0077e1&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;#f7f3f2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#0077e1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f5d216&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;#0077e1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f5d216&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#fc3503&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1">// some other colors to inject randomly</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">otherColors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;#584594&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#e488b7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#d74c41&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#f0d235&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#36ad63&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#69bcea&quot;</span><span class="p">]</span>
+
+<span class="c1">// use root randomness to pick a palette</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">palettes</span><span class="p">[</span><span class="nx">Mat</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">palettes</span><span class="p">.</span><span class="nx">length</span><span class="p">)]</span>
+
+<span class="c1">// draw some art here using the palette</span>
+<span class="c1">// after the fourth generation select</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="p">){</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">depth</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="o">++</span><span class="p">){</span>
+<span class="w">       </span><span class="c1">// small chance to add a random color to the palette</span>
+<span class="w">       </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0.99</span><span class="w"> </span><span class="p">){</span>
+<span class="w">          </span><span class="nx">palette</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
+<span class="w">             </span><span class="nx">otherColors</span><span class="p">[</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="w"> </span><span class="nx">$fx</span><span class="p">.</span><span class="nx">randAt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">otherColors</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">]</span>
+<span class="w">          </span><span class="p">)</span>
+<span class="w">       </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// create the artwork here</span>
+<span class="c1">// make sure the altered palette doesn&#39;t break the sequencing/pattern though</span></code></pre>
+
+<p>This random chance could also be made relative to the depth, such that as the depth increases, the more likely it becomes for these random traits to appear—as an additional incentive for collectors to explore the open-form tree in a depth-first manner.</p>
+<h3 id="random-traits">Random Traits<a class="anchor" href="#random-traits" aria-label="Link to this section">#</a></h3>
+<p>In case you would like to have completely random deterministic aspects for your artwork, you can simply use the last hash in the lineage array—essentially the native hash of the current edition.</p>
+<pre class="code"><code>$fx.randAt($fx.depth)</code></pre>
+
+<h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion" aria-label="Link to this section">#</a></h2>
+<p>Keep in mind, you'll want to design your randomness in such a way that collectors are incentivized to collect your open-form project horizontally and vertically—exploring its parametric space in full, and participating in shaping and curating an interesting collection.</p>
+<p>Make sure to also read through the other sections provided in the open-form docs.</p>
+
+    </article>
+    <nav class="pager" aria-label="Pagination"><a class="pager-prev" href="../fxhash-api/capture-contexts-and-preview-settings/"><span>Previous</span>Capture Contexts &amp; Preview Settings</a><a class="pager-next" href="open-form-art-coin-mechanics-and-economics/"><span>Next</span>Open-form ↔ Art Coin: Mechanics &amp; Economics</a></nav>
+    <footer class="provenance"><p>Originally published at <a href="https://docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart" target="_blank" rel="noopener">docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart</a>. Restored from the <a href="https://web.archive.org/web/20260313235720/https://docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart" target="_blank" rel="noopener">Wayback Machine capture of 2026-03-13</a>.</p><p>Archive preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a>.</p></footer>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc-label">On this page</p><ul><li class="toc-l0"><a href="#api-reference">API Reference</a></li><li class="toc-l1"><a href="#usdfx.lineage">$fx.lineage</a></li><li class="toc-l1"><a href="#usdfx.depth">$fx.depth</a></li><li class="toc-l1"><a href="#usdfx.randat">$fx.randAt()</a></li><li class="toc-l1"><a href="#seeding-your-own-prngs-with-usdfx.createfxrandom">Seeding your own PRNGs with $fx.createFxRandom</a></li><li class="toc-l1"><a href="#caution-with-usdfx.randminter-and-params-in-open-form-projects">Caution with $fx.randminter &amp; params in open-form projects</a></li><li class="toc-l0"><a href="#developing-open-form-projects-locally-with-fxlens">Developing open-form projects locally with fxlens</a></li><li class="toc-l0"><a href="#programming-open-form-genart">Programming open-form genart</a></li><li class="toc-l1"><a href="#depth-based-traits">Depth-based Traits</a></li><li class="toc-l1"><a href="#root-randomness">Root Randomness</a></li><li class="toc-l1"><a href="#re-generating-randomness-trait-inheritance">Re-generating Randomness: Trait Inheritance</a></li><li class="toc-l1"><a href="#l-system-example">L-system Example</a></li><li class="toc-l1"><a href="#pitfalls-to-avoid">Pitfalls to avoid</a></li><li class="toc-l1"><a href="#random-mutations">Random Mutations</a></li><li class="toc-l1"><a href="#random-traits">Random Traits</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li></ul></aside>
+</div>
+<div class="lightbox" hidden><img alt=""></div>
+<script src="../../assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" data-root="../../../" data-page="creating-on-fxhash/programming-open-form-genart/open-form-art-coin-mechanics-and-economics/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open-form ↔ Art Coin: Mechanics &amp; Economics · fxhash docs (archive)</title>
+<meta name="description" content="Art coins are project native currencies linked at the contract level. They enable new mechanics, unlock alternative value around your work, and incentivize interaction at scale.">
+<meta property="og:title" content="Open-form ↔ Art Coin: Mechanics &amp; Economics · fxhash docs (archive)">
+<meta property="og:description" content="Art coins are project native currencies linked at the contract level. They enable new mechanics, unlock alternative value around your work, and incentivize interaction at scale.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111113'/%3E%3Cpath d='M10 9h12M10 16h12M10 23h7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="archive-bar"><p><strong>Archived copy</strong> of docs.fxhash.xyz, restored from the
+<a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot of 13 March 2026</a>.
+<span class="archive-extra">Preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a> ·
+<a href="../../../about/">About this archive</a></span></p></div>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="../../../"><span class="brand-name">fxhash docs</span><span class="brand-tag">archive</span></a>
+  <div class="search" role="search">
+    <span class="search-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+    <input id="search-input" type="search" placeholder="Search the docs" autocomplete="off" spellcheck="false"
+      aria-label="Search the documentation" aria-controls="search-results" aria-expanded="false">
+    <kbd class="search-key" aria-hidden="true">/</kbd>
+    <div id="search-results" class="search-results" role="listbox" hidden></div>
+  </div>
+  <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</header>
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Documentation"><div class="nav-group"><ul><li><a href="../../../">Docs Overview</a></li><li><a href="../../../quickstart-guide/">Quickstart Guide</a></li></ul></div>
+<div class="nav-group"><p class="nav-label">Creating on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../../project-setup-and-development/">Project Setup &amp; Development</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Project Setup &amp; Development"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../project-setup-and-development/project-structure/">Project Structure</a></li><li><a href="../../project-setup-and-development/project-template/">Project Template</a></li><li><a href="../../project-setup-and-development/cli-setup/">CLI Setup</a></li><li><a href="../../project-setup-and-development/cli-reference/">CLI Reference</a></li><li><a href="../../project-setup-and-development/fxlens/">fxlens</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../fxhash-api/">fxhash API</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash API"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../fxhash-api/api-overview/">API Overview</a></li><li><a href="../../fxhash-api/api-reference/">API Reference</a></li><li><a href="../../fxhash-api/fxparams-module/">fxparams module</a></li><li><a href="../../fxhash-api/fxparams-api-reference/">fxparams API Reference</a></li><li><a href="../../fxhash-api/parameter-definition-specs/">Parameter Definition Specs</a></li><li><a href="../../fxhash-api/capture-contexts-and-preview-settings/">Capture Contexts &amp; Preview Settings</a></li></ul></li><li class="has-children open"><div class="nav-row"><a href="../">Programming Open-form Genart</a><button class="nav-toggle" type="button" aria-expanded="true" aria-label="Show pages in Programming Open-form Genart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="./" aria-current="page">Open-form ↔ Art Coin: Mechanics &amp; Economics</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../genart-in-the-browser/">Genart in the Browser</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Genart in the Browser"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../genart-in-the-browser/canvas-element-and-api/">Canvas element &amp; API</a></li><li><a href="../../genart-in-the-browser/including-libraries/">Including Libraries</a></li><li><a href="../../genart-in-the-browser/responsive-browser-projects/">Responsive Browser Projects</a></li><li><a href="../../genart-in-the-browser/deterministic-randomness/">Deterministic Randomness</a></li><li><a href="../../genart-in-the-browser/user-input-and-media-exports/">User Input &amp; Media Exports</a></li><li><a href="../../genart-in-the-browser/testing-browser-compatibility/">Testing Browser Compatibility</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../releasing-your-project/">Releasing your Project</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Releasing your Project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../releasing-your-project/minting-interface-walkthrough/">Minting Interface Walkthrough</a></li><li><a href="../../releasing-your-project/pricing-and-supply/">Pricing and Supply</a></li><li><a href="../../releasing-your-project/reserves-and-allow-lists/">Reserves &amp; Allow Lists</a></li><li><a href="../../releasing-your-project/licensing-your-project/">Licensing your Project</a></li><li><a href="../../releasing-your-project/collaborative-projects/">Collaborative Projects</a></li><li><a href="../../releasing-your-project/withdrawing-earnings-on-eth-base-via-splits/">Withdrawing Earnings on ETH/Base via splits</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Collecting on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../../../collecting-on-fxhash/platform-overview/">Platform Overview</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Platform Overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../collecting-on-fxhash/platform-overview/primary-market/">Primary Market</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/secondary-market/">Secondary Market</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/fx-params-and-the-ticketing-system/">fx(params) &amp; the Ticketing System</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/allow-lists-and-reserves/">Allow Lists &amp; Reserves</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/redeemables/">Redeemables</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../collecting-on-fxhash/collector-tips/">Collector Tips</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Collector Tips"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../collecting-on-fxhash/collector-tips/getting-started-as-a-collector/">Getting Started as a Collector</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/token-discovery-tools/">Token Discovery Tools</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/towards-curation/">Towards Curation</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/market-analysis-and-dynamics/">Market Analysis &amp; Dynamics</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Knowledge Base</p><ul><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/quickstart/">fxhash &amp; Web3</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash &amp; Web3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/quickstart/decentralization-and-blockchain-tech/">Decentralization &amp; Blockchain Tech</a></li><li><a href="../../../knowledge-base/quickstart/multi-chain-integration/">Multi-Chain Integration</a></li><li><a href="../../../knowledge-base/quickstart/nfts-and-smart-contracts/">NFTs &amp; Smart Contracts</a></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/quickstart/web3-storage/">Web3 Storage</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Web3 Storage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/quickstart/web3-storage/ipfs/">IPFS</a></li><li><a href="../../../knowledge-base/quickstart/web3-storage/onchfs/">ONCHFS</a></li></ul></li><li><a href="../../../knowledge-base/quickstart/what-is-generative-art/">What is Generative Art?</a></li><li><a href="../../../knowledge-base/quickstart/genart-on-the-blockchain/">Genart on the Blockchain</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/onboarding/">Onboarding</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Onboarding"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/onboarding/creating-a-wallet/">Creating a Wallet</a></li><li><a href="../../../knowledge-base/onboarding/creating-an-account/">Creating an Account</a></li><li><a href="../../../knowledge-base/onboarding/adding-funds-to-your-wallet/">Adding Funds to Your Wallet</a></li><li><a href="../../../knowledge-base/onboarding/account-verification/">Account Verification</a></li><li><a href="../../../knowledge-base/onboarding/platform-moderation/">Platform Moderation</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/policies-and-guidelines/">Policies &amp; Guidelines</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Policies &amp; Guidelines"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/">Code of Conduct</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Code of Conduct"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/artists-code-of-conduct/">Artists&#x27; Code of Conduct</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/collectors-code-of-conduct/">Collector&#x27;s Code of Conduct</a></li></ul></li><li><a href="../../../knowledge-base/policies-and-guidelines/terms-and-conditions/">Terms and Conditions</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/privacy-policy/">Privacy Policy</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/safety-notes/">Safety Notes</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../onchfs/">ONCHFS</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in ONCHFS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../onchfs/what-is-onchfs/">What is ONCHFS?</a></li><li><a href="../../../onchfs/motivations/">Motivations</a></li><li><a href="../../../onchfs/system-overview/">System Overview</a></li><li><a href="../../../onchfs/cross-chain-referencing/">Cross-chain Referencing</a></li><li><a href="../../../onchfs/limitations/">Limitations</a></li><li><a href="../../../onchfs/references/">References</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Find us on Social Media</p><ul><li><a href="https://x.com/fx_hash_" target="_blank" rel="noopener">X (Twitter) <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://warpcast.com/fxhash" target="_blank" rel="noopener">Farcaster <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://discord.gg/fxhash-900333075509149767" target="_blank" rel="noopener">Join the Discord <span class="ext" aria-hidden="true">↗</span></a></li></ul></div>
+<div class="nav-group nav-meta"><p class="nav-label">This archive</p><ul><li><a href="../../../about/">About this archive</a></li><li><a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot <span class="ext" aria-hidden="true">↗</span></a></li></ul></div></nav>
+  <div class="scrim" hidden></div>
+  <main id="content" class="main">
+    <nav class="crumbs" aria-label="Breadcrumb"><span>Creating on fxhash</span> <span class=sep>/</span> <a href="../">Programming Open-form Genart</a></nav>
+    <article class="doc">
+      <header class="doc-head"><h1>Open-form ↔ Art Coin: Mechanics &amp; Economics</h1><p class="lead">Art coins are project native currencies linked at the contract level. They enable new mechanics, unlock alternative value around your work, and incentivize interaction at scale.</p></header>
+      <p>Open-form generative art introduces a new model for how collectors interact with generative projects on fxhash. Each open-form project is linked to its <strong>own art coin</strong>—a dedicated ERC20 token deployed on the Base L2 chain. This art coin powers all collector interactions with the project, including minting, burning, re-rolling, locking, and evolving NFTs.</p>
+<p>Art coins establish onchain economic systems that reflect collector interest, scarcity, and market demand. This page provides an overview of how open-form mechanics work, the role of art coins, how fees and royalties are structured, and how artists and collectors both benefit from this flexible framework.</p>
+<h2 id="open-form-mechanics-overview">Open-form mechanics overview<a class="anchor" href="#open-form-mechanics-overview" aria-label="Link to this section">#</a></h2>
+<p>Open-form project editions can be <strong>minted</strong>, <strong>burned</strong>, <strong>re-rolled</strong>, <strong>locked</strong> and <strong>evolved</strong> 👇</p>
+<h3 id="mint"><strong>Mint</strong><a class="anchor" href="#mint" aria-label="Link to this section">#</a></h3>
+<p>Minting a new edition from an open-form collection incurs two fees for collectors:</p>
+<ol>
+<li><strong>Purchase cost/price in art coin</strong>: X amount of art coins. <strong>This amount of art coins is escrowed (temporarily deposited) in the contract at time of purchase.</strong></li>
+<li><strong>Mint fee in Base ETH</strong>: a mint fee directly paid out to the artist. This mint fee is initially set to be the same for all projects on fxhash. A minimum value applies to the mint fee.</li>
+</ol>
+<p><strong>Both art coin price and mint fee are set by the artist.</strong></p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>Editions collected from open-form projects are regular NFTs (ERC721 tokens) that can be traded and sold on secondary just like normal editions from long-form projects.</p>
+</div></div>
+<h3 id="burn"><strong>Burn</strong><a class="anchor" href="#burn" aria-label="Link to this section">#</a></h3>
+<p>Collected (and evolved editions) of an open-form project can be burned by their holder (unless they are locked). This <strong>destroys the NFT</strong> and <strong>refunds the collector with the amount of art coins spent to mint or evolve it</strong>.</p>
+<p>There is no mint fee attached to burning an open-form edition.</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>Traditionally, for ERC721 NFTs, &quot;burning&quot; means sending the NFT to a burn(er)/dead wallet, that isn't owned by anyone, and from which the NFT can't be retrieved anymore. In essence a crypto trash-can.</p>
+</div></div>
+<h3 id="re-roll"><strong>Re-roll</strong><a class="anchor" href="#re-roll" aria-label="Link to this section">#</a></h3>
+<p>After you mint (or evolve) an edition, you can <strong>re-roll</strong> it to get a new one. In the background the NFT is burned and a new NFT with a different random hash is minted. This means that:</p>
+<ol>
+<li>The collector is first refunded with the amount of art coins they spent to initially mint/evolve the NFT.</li>
+<li>Then minting the new edition with a different hash will directly spend that same amount of art coins again (escrowing them in the contract again) and incur a mint fee in Base ETH.</li>
+</ol>
+<p>Effectively, re-rolling only incurs a mint fee in Base ETH.</p>
+<h3 id="lock"><strong>Lock</strong><a class="anchor" href="#lock" aria-label="Link to this section">#</a></h3>
+<p>Locking an open-form mint immutably locks its metadata. Once locked:</p>
+<ul>
+<li>the NFT can not be unlocked anymore.</li>
+<li>the NFT can not be burnt (and consequentially not re-rolled) anymore.</li>
+<li>the NFT can now be evolved.</li>
+</ul>
+<p>Locking does not incur any fee. An open-form edition can be traded on the secondary market just like a regular NFT, whether it is locked or not has no influence on this. Locked mints remain locked even when traded.</p>
+<p>Locking an open-form mint permanently locks the escrowed art coins in the contract.</p>
+<h3 id="evolve"><strong>Evolve</strong><a class="anchor" href="#evolve" aria-label="Link to this section">#</a></h3>
+<p>Locked open-form mints can be evolved. Evolving a mint creates a new child NFT that is linked to its parent on the contract level. The child NFT receives its own random hash, in addition to inheriting its parent's random hash, it's parent's parent random hash, and so forth. In form of a list/array.</p>
+<figure class="figure"><img src="../../../assets/img/FEjKS5GUGZ44fSeQS4F5-Screenshot_2025-05-12_at_02.24.23_1_.webp" alt="" width="952" height="417" loading="lazy" decoding="async"></figure>
+<p>In essence an evolved NFT has access to all random hashes that lie between itself and the root mint that it is a descendant of. <strong>We call this a lineage.</strong></p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>How this evolution mechanism is defined is entirely up to how the artist has configured their generative script. <a href="../">Learn more about programming an open-form generative artwork here</a>.</p>
+</div></div>
+<ul>
+<li>Evolving does not destroy or consume the parent NFT.</li>
+<li>An evolved edition can be burned, re-rolled, locked, and evolved, just like a normal open-form mint.</li>
+</ul>
+<p>Similarly to minting a new edition, evolving an edition incurs both a:</p>
+<ol>
+<li><strong>Purchase cost/price in art coins:</strong> Escrowed in the contract just like before until the token is locked.</li>
+<li><strong>Mint fee in Base ETH + evolution fee:</strong> Paid out to the artist, fxhash, in addition to holders of the evolved token's lineage parents. Explained in more detail in the <a href="./#lineage-royalties-and-evolution-fee">Lineage royalties &amp; evolution fee</a> section.</li>
+</ol>
+<h3 id="summary">Summary<a class="anchor" href="#summary" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Action Cost (in Art Coin)</th>
+<th>Circulating Supply</th>
+<th>Action Fee (in Base ETH)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mint</strong></td>
+<td>-X</td>
+<td>Escrows X Art Coins</td>
+<td>-fee$</td>
+</tr>
+<tr>
+<td><strong>Burn</strong></td>
+<td>+X</td>
+<td>Releases X Art Coins</td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>Reroll</strong></td>
+<td>–</td>
+<td>—</td>
+<td>-fee$</td>
+</tr>
+<tr>
+<td><strong>Lock</strong></td>
+<td>–</td>
+<td>Locks X Art Coins</td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>Evolve</strong></td>
+<td>-X</td>
+<td>Escrows X Art Coins</td>
+<td>-fee$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>Naturally, there is also a gas fee attached to all transactions above.</p>
+</div></div>
+<h2 id="lineage-royalties-and-evolution-fee">Lineage royalties &amp; evolution fee<a class="anchor" href="#lineage-royalties-and-evolution-fee" aria-label="Link to this section">#</a></h2>
+<p><strong>Evolving open-form mints adds an extra &quot;evolution fee&quot; on top of the base mint fee.</strong><br />
+This evolution fee increases based on how many times the edition has already evolved — in other words, how deep it is in its lineage. Each new evolution adds a flat amount to the mint fee, so the deeper the lineage, the higher the cost to evolve.</p>
+<p><strong>Collectors earn royalties when their editions (or their descendants) are evolved.</strong><br />
+They receive a share of the base ETH mint fee paid during the evolution.</p>
+<figure class="figure"><img src="../../../assets/img/FhuWHn4kymoN0fG4sBVi-Untitled_Diagram.drawio_4_.webp" alt="" width="1600" height="915" loading="lazy" decoding="async"></figure>
+<p>Let’s use simple numbers to illustrate how the mint and evolution fees are distributed, assume the following dummy numbers for an open-form project:</p>
+<ul>
+<li><strong>Base mint fee</strong>: $1</li>
+<li><strong>Evolution fee</strong>: +$0.25 per depth</li>
+<li><strong>Current depth</strong>: 3 evolutions (Collector 3 holds the 3rd evolution)</li>
+</ul>
+<p>When a new collector evolves the third token in the lineage to create a new, 4th evolution, the <strong>total evolution mint fee to be paid by the collector:</strong></p>
+<div class="callout callout-tip" role="note" aria-label="Tip"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body">
+<h4 id="usd1-base-fee-usd0.25-3-depth-usd1.75"><strong>$1 (base fee) + $0.25 × 3 (depth) = $1.75</strong><a class="anchor" href="#usd1-base-fee-usd0.25-3-depth-usd1.75" aria-label="Link to this section">#</a></h4>
+<p>This $1.75 is distributed as follows:</p>
+<ul>
+<li>
+<p><strong>The artist receives $1.2375:</strong> $0.90 from the base fee (90%) + $0.1125 × 3 = $0.3375 from the evolution fees (90% of 50% of each $0.25)</p>
+</li>
+<li>
+<p>Each prior lineage collector receives 50% of one $0.25 evolution fee:</p>
+<ul>
+<li><strong>Collector 3</strong> (depth 3): $0.125</li>
+<li><strong>Collector 2</strong> (depth 2): $0.125</li>
+<li><strong>Collector 1</strong> (depth 1): $0.125</li>
+</ul>
+</li>
+<li>
+<p><strong>fxhash receives $0.1375:</strong> $0.10 from the base fee (10%) + $0.0125 × 3 = $0.0375 from the evolution fees (10% of 50% of each $0.25)</p>
+</li>
+</ul>
+</div></div>
+<p>Evolution fees are paid out to the previous 40 lineage collectors. If an evolved mint has more than 40 ancestral tokens, no royalties are paid out to any earlier collectors. For example, if a depth of 41 is evolved, collector #1 does not receive a royalty.</p>
+<p>This does not cap the actual fee however, which continues to increase with further evolutions even after a depth of 40 is reached—50% of the accumulated evolution is distributed in equal to those 40 collectors.</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>For an initial period of time, open-form editions can be evolved by anyone, and not just their owner. Collectors will able to toggle this option on their collected NFTs later on, deciding if they make their collected editions available for others to evolve.</p>
+</div></div>
+<h2 id="art-coin-price-and-scarcity-dynamics">Art coin price &amp; scarcity dynamics<a class="anchor" href="#art-coin-price-and-scarcity-dynamics" aria-label="Link to this section">#</a></h2>
+<p>Interacting with an open-form project—by minting, burning, locking and evolving editions—has a direct effect on the associated art coin's supply.</p>
+<ul>
+<li><strong>Minting a new edition</strong>, or <strong>evolving</strong> an already existing edition, temporarily removes that amount of art coins from the overall circulating supply. This amount of art coins is inaccessible as long as the NFT isn't burned.</li>
+<li>When <strong>burning</strong> an edition, the collector <strong>regains the spent amount of art coins</strong>. These coins re-enter the circulating supply and can be sold by the collector for $FXH.</li>
+<li><strong>Locking an edition permanently locks the art coins in the contract</strong>, effectively removing them from the circulating supply.</li>
+</ul>
+<p><strong>As more editions are permanently locked, the overall circulating supply shrinks.</strong> This means that a smaller number of coins is left for the market, and needs to be shared among collectors and traders.</p>
+<p>This doesn't immediately increase the art coin's value, but increases the art coin's scarcity—an indicator that there is demand for the project, which can place upward pressure on the value of the remaining coin supply.</p>
+<p><strong>As the art coin's price fluctuates, depending on market activity, the effective price of a project in art coins regulates itself.</strong> This also depends on the effective price of the $FXH token.</p>
+<hr />
+<p>Dummy numbers to show how increasing the price per mint in an open-form edition locks a higher percentage of a fixed 1 million art coin supply (as mints are permanently locked).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th># of locked mints</th>
+<th>art coin price per mint</th>
+<th>% of locked supply</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1000</td>
+<td>5 $art</td>
+<td>0.5%</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>25 $art</td>
+<td>2.5%</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>50 $art</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>100 $art</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-do-artists-profit-from-their-art-coin-s">How do artists profit from their art coin(s)?<a class="anchor" href="#how-do-artists-profit-from-their-art-coin-s" aria-label="Link to this section">#</a></h2>
+<p>While open-form projects already provide a direct revenue stream through the mint and evolution fees, a project's associated art coin enables secondary streams of revenue. Artists can earn through:</p>
+<ul>
+<li>
+<p><strong>Sale of their art coin holdings</strong>: artists are required to reserve a minimum starting supply when creating their open-form project and kicking off the bonding curve launch of their art coin—ranging anywhere between 10 to 30% of the art coin's overall 1M supply.</p>
+<p>With the success of the linked open-form project(s), the art coin's valuation will prospectively increase in value, allowing artists to capture this gain through the sale of these initial holdings. This can be done through the fxhash interface or a DEX.</p>
+</li>
+<li>
+<p><strong>Capturing liquidity pool transaction volume</strong>: when art coins graduate, the invested $FXH and the art coin reserve is migrated to a primary liquidity pool on the open market, through which the art coin can be freely traded. Artists receive 0.75% of the trades that happen on this primary art coin ↔ $FXH liquidity pool (0.75% of the cumulative volume).</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p><em>This 0.75% is also captured from the trades happening during the bonding curve launch.</em></p>
+</div></div>
+</li>
+</ul>
+<p>Revenue earned from an open-form project and its associated art coin depends on a number of factors as well as the selected starting parameters artists choose, we cover this in more detail and share some example scenarios in an upcoming page.</p>
+<h2 id="multi-project-art-coins">Multi-project art coins<a class="anchor" href="#multi-project-art-coins" aria-label="Link to this section">#</a></h2>
+<p><strong>One art coin can be linked to multiple projects.</strong> Artists can create an art coin:</p>
+<ul>
+<li>for a single project.</li>
+<li>for a series of projects.</li>
+<li>for an entire body of work.</li>
+</ul>
+<p><strong>Why link multiple projects to a single art coin?</strong> Similarly to how the supply of an art coin directly reflects interest in a single project, the same concept applies when the art coin is used as a shared currency by multiple projects.</p>
+<p>Artists seldomly release only a single project and call it a day—art coins make it possible to group projects in a continuous, <em>liquid</em> fashion and link them in more than just a semantic manner.</p>
+<ul>
+<li><strong>First Project:</strong> When launching the first project with a new art coin the artist sets how many <strong>art coins are required to mint or evolve</strong> an edition. This implicitly creates an edition size for the project based on the one million art coin supply.</li>
+<li><strong>For any future projects linked to the same art coin</strong>: the artist chooses the <strong>number of editions</strong> they want to allocate for the remaining supply of the art coin—the <strong>price per edition</strong> is then automatically calculated.</li>
+</ul>
+<p>This process can be repeated indefinitely, and the prices for earlier projects remain unchanged. Because the supply of art coins is fractional, the remaining supply of an art coin can always be allocated to new projects — even if most of it is already locked away by collectors minting and evolve.</p>
+<p>An important note here, is that linking a <strong>new project</strong> to an existing coin is <strong>not the same</strong> as updating the code of the same current project.</p>
+
+    </article>
+    <nav class="pager" aria-label="Pagination"><a class="pager-prev" href="../"><span>Previous</span>Programming Open-form Genart</a><a class="pager-next" href="../../genart-in-the-browser/"><span>Next</span>Genart in the Browser</a></nav>
+    <footer class="provenance"><p>Originally published at <a href="https://docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart/open-form-art-coin-mechanics-and-economics" target="_blank" rel="noopener">docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart/open-form-art-coin-mechanics-and-economics</a>. Restored from the <a href="https://web.archive.org/web/20260311140054/https://docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart/open-form-art-coin-mechanics-and-economics" target="_blank" rel="noopener">Wayback Machine capture of 2026-03-11</a>.</p><p>Archive preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a>.</p></footer>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc-label">On this page</p><ul><li class="toc-l0"><a href="#open-form-mechanics-overview">Open-form mechanics overview</a></li><li class="toc-l1"><a href="#mint">Mint</a></li><li class="toc-l1"><a href="#burn">Burn</a></li><li class="toc-l1"><a href="#re-roll">Re-roll</a></li><li class="toc-l1"><a href="#lock">Lock</a></li><li class="toc-l1"><a href="#evolve">Evolve</a></li><li class="toc-l1"><a href="#summary">Summary</a></li><li class="toc-l0"><a href="#lineage-royalties-and-evolution-fee">Lineage royalties &amp; evolution fee</a></li><li class="toc-l0"><a href="#art-coin-price-and-scarcity-dynamics">Art coin price &amp; scarcity dynamics</a></li><li class="toc-l0"><a href="#how-do-artists-profit-from-their-art-coin-s">How do artists profit from their art coin(s)?</a></li><li class="toc-l0"><a href="#multi-project-art-coins">Multi-project art coins</a></li></ul></aside>
+</div>
+<div class="lightbox" hidden><img alt=""></div>
+<script src="../../../assets/site.js" defer></script>
+</body>
+</html>

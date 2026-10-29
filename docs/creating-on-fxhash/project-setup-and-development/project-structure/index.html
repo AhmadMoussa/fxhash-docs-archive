@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" data-root="../../../" data-page="creating-on-fxhash/project-setup-and-development/project-structure/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Structure · fxhash docs (archive)</title>
+<meta name="description" content="This page explains the structure of an fxhash project, providing an overview of the individual files and their purpose.">
+<meta property="og:title" content="Project Structure · fxhash docs (archive)">
+<meta property="og:description" content="This page explains the structure of an fxhash project, providing an overview of the individual files and their purpose.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111113'/%3E%3Cpath d='M10 9h12M10 16h12M10 23h7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="archive-bar"><p><strong>Archived copy</strong> of docs.fxhash.xyz, restored from the
+<a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot of 13 March 2026</a>.
+<span class="archive-extra">Preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a> ·
+<a href="../../../about/">About this archive</a></span></p></div>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="../../../"><span class="brand-name">fxhash docs</span><span class="brand-tag">archive</span></a>
+  <div class="search" role="search">
+    <span class="search-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+    <input id="search-input" type="search" placeholder="Search the docs" autocomplete="off" spellcheck="false"
+      aria-label="Search the documentation" aria-controls="search-results" aria-expanded="false">
+    <kbd class="search-key" aria-hidden="true">/</kbd>
+    <div id="search-results" class="search-results" role="listbox" hidden></div>
+  </div>
+  <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</header>
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Documentation"><div class="nav-group"><ul><li><a href="../../../">Docs Overview</a></li><li><a href="../../../quickstart-guide/">Quickstart Guide</a></li></ul></div>
+<div class="nav-group"><p class="nav-label">Creating on fxhash</p><ul><li class="has-children open"><div class="nav-row"><a href="../">Project Setup &amp; Development</a><button class="nav-toggle" type="button" aria-expanded="true" aria-label="Show pages in Project Setup &amp; Development"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="./" aria-current="page">Project Structure</a></li><li><a href="../project-template/">Project Template</a></li><li><a href="../cli-setup/">CLI Setup</a></li><li><a href="../cli-reference/">CLI Reference</a></li><li><a href="../fxlens/">fxlens</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../fxhash-api/">fxhash API</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash API"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../fxhash-api/api-overview/">API Overview</a></li><li><a href="../../fxhash-api/api-reference/">API Reference</a></li><li><a href="../../fxhash-api/fxparams-module/">fxparams module</a></li><li><a href="../../fxhash-api/fxparams-api-reference/">fxparams API Reference</a></li><li><a href="../../fxhash-api/parameter-definition-specs/">Parameter Definition Specs</a></li><li><a href="../../fxhash-api/capture-contexts-and-preview-settings/">Capture Contexts &amp; Preview Settings</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../programming-open-form-genart/">Programming Open-form Genart</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Programming Open-form Genart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../programming-open-form-genart/open-form-art-coin-mechanics-and-economics/">Open-form ↔ Art Coin: Mechanics &amp; Economics</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../genart-in-the-browser/">Genart in the Browser</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Genart in the Browser"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../genart-in-the-browser/canvas-element-and-api/">Canvas element &amp; API</a></li><li><a href="../../genart-in-the-browser/including-libraries/">Including Libraries</a></li><li><a href="../../genart-in-the-browser/responsive-browser-projects/">Responsive Browser Projects</a></li><li><a href="../../genart-in-the-browser/deterministic-randomness/">Deterministic Randomness</a></li><li><a href="../../genart-in-the-browser/user-input-and-media-exports/">User Input &amp; Media Exports</a></li><li><a href="../../genart-in-the-browser/testing-browser-compatibility/">Testing Browser Compatibility</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../releasing-your-project/">Releasing your Project</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Releasing your Project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../releasing-your-project/minting-interface-walkthrough/">Minting Interface Walkthrough</a></li><li><a href="../../releasing-your-project/pricing-and-supply/">Pricing and Supply</a></li><li><a href="../../releasing-your-project/reserves-and-allow-lists/">Reserves &amp; Allow Lists</a></li><li><a href="../../releasing-your-project/licensing-your-project/">Licensing your Project</a></li><li><a href="../../releasing-your-project/collaborative-projects/">Collaborative Projects</a></li><li><a href="../../releasing-your-project/withdrawing-earnings-on-eth-base-via-splits/">Withdrawing Earnings on ETH/Base via splits</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Collecting on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../../../collecting-on-fxhash/platform-overview/">Platform Overview</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Platform Overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../collecting-on-fxhash/platform-overview/primary-market/">Primary Market</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/secondary-market/">Secondary Market</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/fx-params-and-the-ticketing-system/">fx(params) &amp; the Ticketing System</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/allow-lists-and-reserves/">Allow Lists &amp; Reserves</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/redeemables/">Redeemables</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../collecting-on-fxhash/collector-tips/">Collector Tips</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Collector Tips"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../collecting-on-fxhash/collector-tips/getting-started-as-a-collector/">Getting Started as a Collector</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/token-discovery-tools/">Token Discovery Tools</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/towards-curation/">Towards Curation</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/market-analysis-and-dynamics/">Market Analysis &amp; Dynamics</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Knowledge Base</p><ul><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/quickstart/">fxhash &amp; Web3</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash &amp; Web3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/quickstart/decentralization-and-blockchain-tech/">Decentralization &amp; Blockchain Tech</a></li><li><a href="../../../knowledge-base/quickstart/multi-chain-integration/">Multi-Chain Integration</a></li><li><a href="../../../knowledge-base/quickstart/nfts-and-smart-contracts/">NFTs &amp; Smart Contracts</a></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/quickstart/web3-storage/">Web3 Storage</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Web3 Storage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/quickstart/web3-storage/ipfs/">IPFS</a></li><li><a href="../../../knowledge-base/quickstart/web3-storage/onchfs/">ONCHFS</a></li></ul></li><li><a href="../../../knowledge-base/quickstart/what-is-generative-art/">What is Generative Art?</a></li><li><a href="../../../knowledge-base/quickstart/genart-on-the-blockchain/">Genart on the Blockchain</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/onboarding/">Onboarding</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Onboarding"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/onboarding/creating-a-wallet/">Creating a Wallet</a></li><li><a href="../../../knowledge-base/onboarding/creating-an-account/">Creating an Account</a></li><li><a href="../../../knowledge-base/onboarding/adding-funds-to-your-wallet/">Adding Funds to Your Wallet</a></li><li><a href="../../../knowledge-base/onboarding/account-verification/">Account Verification</a></li><li><a href="../../../knowledge-base/onboarding/platform-moderation/">Platform Moderation</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/policies-and-guidelines/">Policies &amp; Guidelines</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Policies &amp; Guidelines"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/">Code of Conduct</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Code of Conduct"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/artists-code-of-conduct/">Artists&#x27; Code of Conduct</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/collectors-code-of-conduct/">Collector&#x27;s Code of Conduct</a></li></ul></li><li><a href="../../../knowledge-base/policies-and-guidelines/terms-and-conditions/">Terms and Conditions</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/privacy-policy/">Privacy Policy</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/safety-notes/">Safety Notes</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../onchfs/">ONCHFS</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in ONCHFS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../onchfs/what-is-onchfs/">What is ONCHFS?</a></li><li><a href="../../../onchfs/motivations/">Motivations</a></li><li><a href="../../../onchfs/system-overview/">System Overview</a></li><li><a href="../../../onchfs/cross-chain-referencing/">Cross-chain Referencing</a></li><li><a href="../../../onchfs/limitations/">Limitations</a></li><li><a href="../../../onchfs/references/">References</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Find us on Social Media</p><ul><li><a href="https://x.com/fx_hash_" target="_blank" rel="noopener">X (Twitter) <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://warpcast.com/fxhash" target="_blank" rel="noopener">Farcaster <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://discord.gg/fxhash-900333075509149767" target="_blank" rel="noopener">Join the Discord <span class="ext" aria-hidden="true">↗</span></a></li></ul></div>
+<div class="nav-group nav-meta"><p class="nav-label">This archive</p><ul><li><a href="../../../about/">About this archive</a></li><li><a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot <span class="ext" aria-hidden="true">↗</span></a></li></ul></div></nav>
+  <div class="scrim" hidden></div>
+  <main id="content" class="main">
+    <nav class="crumbs" aria-label="Breadcrumb"><span>Creating on fxhash</span> <span class=sep>/</span> <a href="../">Project Setup &amp; Development</a></nav>
+    <article class="doc">
+      <header class="doc-head"><h1>Project Structure</h1><p class="lead">This page explains the structure of an fxhash project, providing an overview of the individual files and their purpose.</p></header>
+      <p>Generative artworks on fxhash are self-contained web projects that run in the browser. In other words, fxhash projects are mini web pages that display generative graphics, which are served inside an iframe whenever they are requested by a user in the interface.</p>
+<div class="callout callout-warning" role="note" aria-label="Warning"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></span><div class="callout-body">
+<p>If your project is not working in the sandbox or the mint preview, the most common reason is that you are likely trying to make networked requests or load in external script files. All assets required for your project need to be contained within the source directory.</p>
+</div></div>
+<p>An fxhash project needs to follow a specific structure—at the bare minimum it needs to consist out of:</p>
+<ul>
+<li>An <code>index.html</code> file that the browser uses to display the artwork.</li>
+<li>A <code>styles.css</code> stylesheet that helps display the HTML file properly.</li>
+<li>And a <code>script.js</code> JavaScript file that contains the artist's code and is responsible for generating the artwork/graphcis.</li>
+</ul>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>Additionally, fxhash provides a script file <code>fxhash.js</code> (or <code>fxhash.min.js</code> as a minified version) that provides the functionality to make the project compatible with the platform.</p>
+</div></div>
+<p>If you're familiar with these technologies, here's a quick example of what each file should contain:</p>
+<p><strong>index.html</strong></p>
+<p>Every web project typically has a primary HTML entry point, also known as the index file. This file usually represents the initial view of a webpage, and in the case of generative art project on fxhash is the page that will display your generative artwork. In essence it's the page that fxhash serves to the client whenever a project is viewed.</p>
+<p>Here is an example of what a minimal index.html page looks like:</p>
+<pre class="code" data-lang="HTML"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title of the Project<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./fxhash.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;./styles.css&quot;</span> <span class="p">/&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./index.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+
+<div class="callout callout-warning" role="note" aria-label="Warning"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></span><div class="callout-body">
+<p>It is necessary that every fxhash project has this index.html file. And it needs to be titled <code>index.html</code> . This HTML file will either contain all of the necessary code, including the CSS and the JavaScript, or reference them as other files in the same directory.</p>
+</div></div>
+<p><strong>index.js</strong></p>
+<p>This JavaScript file contains the artist written code that makes the generative artwork happen. Most, if not all of your code should go here.</p>
+<div class="callout callout-note" role="note" aria-label="Info"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div class="callout-body">
+<p>It actually doesn't matter what this file is called, it just needs to be referenced correctly within the index.html file. Alternatively, the script could also be placed directly inside the index.html within a <code>&lt;script&gt;&lt;/script&gt;</code> tag.</p>
+<p>Moreover, it is often the case that larger projects split their code over several script files, which is also perfectly fine. In that scenario the index.html file just needs to reference all of these files.</p>
+</div></div>
+<p><strong>styles.css</strong></p>
+<p>The stylesheet will generally only contain a few styling instructions for the purpose of correctly displaying the generative artwork in the browser. In that sense, this file is optional, but is useful for centering and containing the artwork within the browser window responsively, or resize the artwork when the dimensions of the browser window change, if it is meant to be a dynamic piece.</p>
+<p>In the scenario of centering a static artwork within the browser window, the content of the stylesheet would look something like what follows:</p>
+<pre class="code" data-lang="CSS"><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c">/* override the default margin of the html body */</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">canvasContainer</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+<span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vw</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">myCanvas</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="w">  </span><span class="k">max-height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+
+<p>We talk in more detail about what these CSS rules do in the Responsive Webpages Section.</p>
+<p><strong>fxhash.min.js</strong></p>
+<p>A necessary script file provided by fxhash - every project needs to include this file. This script exposes a number of functions that make your project compatible with the fx(hash) platform.</p>
+<ul>
+<li><a href="https://github.com/fxhash/fxhash-boilerplate/blob/master/fxhash.min.js" target="_blank" rel="noopener">fxhash-boilerplate/fxhash.min.js at master · fxhash/fxhash-boilerplate</a> — GitHub</li>
+</ul>
+<p><em>You can find the latest and up to date snippet here.</em></p>
+<p>These functions are geared towards aiding artists in turning their generative artworks into deterministic generators - we will have a detailed look at the contents of this file in the Project SDK &amp; API section, where it'll be properly introduced</p>
+<p>If you're not familiar with the general structure of a webpage, here's additional information to get you up to speed:</p>
+<details>
+<summary>HTML</summary>
+<p>The three core technologies that generally make up a webpage are:</p>
+<p><strong>HTML (Hypertext Markup Language)</strong>: This is the backbone of nearly every webpage and the standard markup language of the internet. A markup language uses symbols inserted in a text document to control its structure, formatting, or the relationships between its parts. HTML's primary purpose is to structure content on a web page.</p>
+<p>HTML primarily functions on a basis of tags that define and structure the content of the web page. These tags come in the form of specific keywords that are enclosed in angle brackets <code>&lt;&gt;</code> . Tags usually come in pairs: an opening tag and a closing tag containing some text, or other tags in between. The opening tag indicates the beginning of an element, and the closing tag indicates the end of that element. These tags are then used as instructions by the web browser to structure the content between these tags.</p>
+<p>In the case of fx(hash) projects we're usually not going to write much HTML code, usually none at all - except maybe in a scenario in which the artist is creating a generative artwork with HTML and CSS. The index.html that comes with the boilerplate is a very simple web page that references the two js files, the fxhash.js file and index.js file, that are also found in the boilerplate folder.</p>
+<p><em>Why is the <strong>fxhash.js</strong> script referenced in the</em> <code>head</code> <em>tag, whereas the artist's index.js script is included in the</em> <code>body</code> <em>tag?</em></p>
+<p>It is common practice to include important scripts required for the proper execution of a web page in the head tag - scripts referenced in the <code>head</code> tag are loaded in before the page is actually run by the browser - this makes sure the fx(hash) functions are available when the time comes to execute the artist script. If you include third party libraries in your project, you should also reference them in this <code>head</code> tag.</p>
+<p>A few other tags that also exist in the index’s head are:</p>
+<ul>
+<li><code>title</code><strong>:</strong> the title tag is the title of the webpage, and should contain the name of your project. When your artwork is opened in live view, this title will appear as the title of the tab it is open in.</li>
+<li><code>meta</code>: some metadata information about the document, this is a standard tag that is included in every webpage. Usually it is left as is.</li>
+<li><code>stylesheet</code>: a reference to the css stylesheet that takes care of formatting the html document. This will simply bring in the styling instructions, if any.</li>
+</ul>
+<p>Additionally, you can include a special tag in the head of your project in case you'd like the page to display a favicon when it is opened in live view - you'd simply drop the favicon file (a <strong>PNG</strong> or <strong>SVG</strong> file) in the project directory alongside the other files and link it as such:</p>
+<pre class="code" data-lang="HTML"><code><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;icon&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;image/x-icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/favicon.ico&quot;</span><span class="p">&gt;</span></code></pre>
+
+<p>A good example for this are loackme's projects—that always include a custom favicon:</p>
+<figure class="figure"><img src="../../../assets/img/5KPWfK3QLKVNK7LaFzBW-favicon_example.webp" alt="" width="1600" height="706" loading="lazy" decoding="async"></figure>
+</details>
+<details>
+<summary>CSS</summary>
+<p><strong>CSS (Cascading Style Sheets)</strong>: This style sheet language describes the presentation of documents written in markup languages. Used with HTML, CSS makes webpages visually appealing. It controls page layout, visual properties of elements, typography, and more. In essence, CSS gives webpages their visual aesthetics.</p>
+</details>
+<details>
+<summary>JavaScript</summary>
+<p><strong>JavaScript (JS)</strong>: Now arguably the most popular programming language, JavaScript is the primary language used on the Web. It adds functionality and interactivity to webpages. JavaScript can also generate graphics in the browser, making it increasingly popular for creating generative art. It's commonly used in fxhash projects.</p>
+</details>
+<div class="callout callout-tip" role="note" aria-label="Tip"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body">
+<p>Although these are the main 3 technologies that you need to have a grasp of for making a project on fxhash, there are other approaches that you can</p>
+</div></div>
+<p>In the next section we'll have a look at the fxhash boilerplate - a starting template that already includes all of these files and essentially constitutes the quickest way to get started building a generative token for fxhash, without you having to manually create these files.</p>
+
+    </article>
+    <nav class="pager" aria-label="Pagination"><a class="pager-prev" href="../"><span>Previous</span>Project Setup &amp; Development</a><a class="pager-next" href="../project-template/"><span>Next</span>Project Template</a></nav>
+    <footer class="provenance"><p>Originally published at <a href="https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/project-structure" target="_blank" rel="noopener">docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/project-structure</a>. Restored from the <a href="https://web.archive.org/web/20260311163854/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/project-structure" target="_blank" rel="noopener">Wayback Machine capture of 2026-03-11</a>.</p><p>Archive preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a>.</p></footer>
+  </main>
+  <aside class="toc" aria-label="On this page"></aside>
+</div>
+<div class="lightbox" hidden><img alt=""></div>
+<script src="../../../assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+{
+ "/": {
+  "file": "index.html",
+  "wayback_url": "https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/"
+ },
+ "/quickstart-guide": {
+  "file": "quickstart-guide.html",
+  "wayback_url": "https://web.archive.org/web/20260312033504/https://docs.fxhash.xyz/quickstart-guide"
+ },
+ "/creating-on-fxhash/project-setup-and-development": {
+  "file": "creating-on-fxhash__project-setup-and-development.html",
+  "wayback_url": "https://web.archive.org/web/20260310175246/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development"
+ },
+ "/creating-on-fxhash/project-setup-and-development/project-structure": {
+  "file": "creating-on-fxhash__project-setup-and-development__project-structure.html",
+  "wayback_url": "https://web.archive.org/web/20260311163854/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/project-structure"
+ },
+ "/creating-on-fxhash/project-setup-and-development/project-template": {
+  "file": "creating-on-fxhash__project-setup-and-development__project-template.html",
+  "wayback_url": "https://web.archive.org/web/20260313223139/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/project-template"
+ },
+ "/creating-on-fxhash/project-setup-and-development/cli-setup": {
+  "file": "creating-on-fxhash__project-setup-and-development__cli-setup.html",
+  "wayback_url": "https://web.archive.org/web/20260310154722/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/cli-setup"
+ },
+ "/creating-on-fxhash/project-setup-and-development/cli-reference": {
+  "file": "creating-on-fxhash__project-setup-and-development__cli-reference.html",
+  "wayback_url": "https://web.archive.org/web/20260312005021/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/cli-reference"
+ },
+ "/creating-on-fxhash/project-setup-and-development/fxlens": {
+  "file": "creating-on-fxhash__project-setup-and-development__fxlens.html",
+  "wayback_url": "https://web.archive.org/web/20260311164941/https://docs.fxhash.xyz/creating-on-fxhash/project-setup-and-development/fxlens"
+ },
+ "/creating-on-fxhash/fxhash-api": {
+  "file": "creating-on-fxhash__fxhash-api.html",
+  "wayback_url": "https://web.archive.org/web/20260311071727/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api"
+ },
+ "/creating-on-fxhash/fxhash-api/api-overview": {
+  "file": "creating-on-fxhash__fxhash-api__api-overview.html",
+  "wayback_url": "https://web.archive.org/web/20260313224006/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api/api-overview"
+ },
+ "/creating-on-fxhash/fxhash-api/api-reference": {
+  "file": "creating-on-fxhash__fxhash-api__api-reference.html",
+  "wayback_url": "https://web.archive.org/web/20260313225634/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api/api-reference"
+ },
+ "/creating-on-fxhash/fxhash-api/fxparams-module": {
+  "file": "creating-on-fxhash__fxhash-api__fxparams-module.html",
+  "wayback_url": "https://web.archive.org/web/20260312043355/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api/fxparams-module"
+ },
+ "/creating-on-fxhash/fxhash-api/fxparams-api-reference": {
+  "file": "creating-on-fxhash__fxhash-api__fxparams-api-reference.html",
+  "wayback_url": "https://web.archive.org/web/20260312012625/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api/fxparams-api-reference"
+ },
+ "/creating-on-fxhash/fxhash-api/parameter-definition-specs": {
+  "file": "creating-on-fxhash__fxhash-api__parameter-definition-specs.html",
+  "wayback_url": "https://web.archive.org/web/20260313231351/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api/parameter-definition-specs"
+ },
+ "/creating-on-fxhash/fxhash-api/capture-contexts-and-preview-settings": {
+  "file": "creating-on-fxhash__fxhash-api__capture-contexts-and-preview-settings.html",
+  "wayback_url": "https://web.archive.org/web/20260311032335/https://docs.fxhash.xyz/creating-on-fxhash/fxhash-api/capture-contexts-and-preview-settings"
+ },
+ "/creating-on-fxhash/programming-open-form-genart": {
+  "file": "creating-on-fxhash__programming-open-form-genart.html",
+  "wayback_url": "https://web.archive.org/web/20260313235720/https://docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart"
+ },
+ "/creating-on-fxhash/programming-open-form-genart/open-form-art-coin-mechanics-and-economics": {
+  "file": "creating-on-fxhash__programming-open-form-genart__open-form-art-coin-mechanics-and-economics.html",
+  "wayback_url": "https://web.archive.org/web/20260311140054/https://docs.fxhash.xyz/creating-on-fxhash/programming-open-form-genart/open-form-art-coin-mechanics-and-economics"
+ },
+ "/creating-on-fxhash/genart-in-the-browser": {
+  "file": "creating-on-fxhash__genart-in-the-browser.html",
+  "wayback_url": "https://web.archive.org/web/20260311120914/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser"
+ },
+ "/creating-on-fxhash/genart-in-the-browser/canvas-element-and-api": {
+  "file": "creating-on-fxhash__genart-in-the-browser__canvas-element-and-api.html",
+  "wayback_url": "https://web.archive.org/web/20260312044332/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser/canvas-element-and-api"
+ },
+ "/creating-on-fxhash/genart-in-the-browser/including-libraries": {
+  "file": "creating-on-fxhash__genart-in-the-browser__including-libraries.html",
+  "wayback_url": "https://web.archive.org/web/20260311055049/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser/including-libraries"
+ },
+ "/creating-on-fxhash/genart-in-the-browser/responsive-browser-projects": {
+  "file": "creating-on-fxhash__genart-in-the-browser__responsive-browser-projects.html",
+  "wayback_url": "https://web.archive.org/web/20260312001935/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser/responsive-browser-projects"
+ },
+ "/creating-on-fxhash/genart-in-the-browser/deterministic-randomness": {
+  "file": "creating-on-fxhash__genart-in-the-browser__deterministic-randomness.html",
+  "wayback_url": "https://web.archive.org/web/20260311120450/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser/deterministic-randomness"
+ },
+ "/creating-on-fxhash/genart-in-the-browser/user-input-and-media-exports": {
+  "file": "creating-on-fxhash__genart-in-the-browser__user-input-and-media-exports.html",
+  "wayback_url": "https://web.archive.org/web/20260312073909/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser/user-input-and-media-exports"
+ },
+ "/creating-on-fxhash/genart-in-the-browser/testing-browser-compatibility": {
+  "file": "creating-on-fxhash__genart-in-the-browser__testing-browser-compatibility.html",
+  "wayback_url": "https://web.archive.org/web/20260313235222/https://docs.fxhash.xyz/creating-on-fxhash/genart-in-the-browser/testing-browser-compatibility"
+ },
+ "/creating-on-fxhash/releasing-your-project": {
+  "file": "creating-on-fxhash__releasing-your-project.html",
+  "wayback_url": "https://web.archive.org/web/20260311063314/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project"
+ },
+ "/creating-on-fxhash/releasing-your-project/minting-interface-walkthrough": {
+  "file": "creating-on-fxhash__releasing-your-project__minting-interface-walkthrough.html",
+  "wayback_url": "https://web.archive.org/web/20260311000639/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/minting-interface-walkthrough"
+ },
+ "/creating-on-fxhash/releasing-your-project/pricing-and-supply": {
+  "file": "creating-on-fxhash__releasing-your-project__pricing-and-supply.html",
+  "wayback_url": "https://web.archive.org/web/20260313230845/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/pricing-and-supply"
+ },
+ "/creating-on-fxhash/releasing-your-project/reserves-and-allow-lists": {
+  "file": "creating-on-fxhash__releasing-your-project__reserves-and-allow-lists.md",
+  "wayback_url": "https://web.archive.org/web/20260411135142/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/reserves-and-allow-lists"
+ },
+ "/creating-on-fxhash/releasing-your-project/licensing-your-project": {
+  "file": "creating-on-fxhash__releasing-your-project__licensing-your-project.html",
+  "wayback_url": "https://web.archive.org/web/20260311132806/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/licensing-your-project"
+ },
+ "/creating-on-fxhash/releasing-your-project/collaborative-projects": {
+  "file": "creating-on-fxhash__releasing-your-project__collaborative-projects.html",
+  "wayback_url": "https://web.archive.org/web/20260312101902/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/collaborative-projects"
+ },
+ "/creating-on-fxhash/releasing-your-project/withdrawing-earnings-on-eth-base-via-splits": {
+  "file": "creating-on-fxhash__releasing-your-project__withdrawing-earnings-on-eth-base-via-splits.html",
+  "wayback_url": "https://web.archive.org/web/20260311155846/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/withdrawing-earnings-on-eth-base-via-splits"
+ },
+ "/collecting-on-fxhash/platform-overview": {
+  "file": "collecting-on-fxhash__platform-overview.html",
+  "wayback_url": "https://web.archive.org/web/20260312014522/https://docs.fxhash.xyz/collecting-on-fxhash/platform-overview"
+ },
+ "/collecting-on-fxhash/platform-overview/primary-market": {
+  "file": "collecting-on-fxhash__platform-overview__primary-market.html",
+  "wayback_url": "https://web.archive.org/web/20260310165301/https://docs.fxhash.xyz/collecting-on-fxhash/platform-overview/primary-market"
+ },
+ "/collecting-on-fxhash/platform-overview/secondary-market": {
+  "file": "collecting-on-fxhash__platform-overview__secondary-market.html",
+  "wayback_url": "https://web.archive.org/web/20260313234646/https://docs.fxhash.xyz/collecting-on-fxhash/platform-overview/secondary-market"
+ },
+ "/collecting-on-fxhash/platform-overview/fx-params-and-the-ticketing-system": {
+  "file": "collecting-on-fxhash__platform-overview__fx-params-and-the-ticketing-system.html",
+  "wayback_url": "https://web.archive.org/web/20260312075603/https://docs.fxhash.xyz/collecting-on-fxhash/platform-overview/fx-params-and-the-ticketing-system"
+ },
+ "/collecting-on-fxhash/platform-overview/allow-lists-and-reserves": {
+  "file": "collecting-on-fxhash__platform-overview__allow-lists-and-reserves.html",
+  "wayback_url": "https://web.archive.org/web/20260313232930/https://docs.fxhash.xyz/collecting-on-fxhash/platform-overview/allow-lists-and-reserves"
+ },
+ "/collecting-on-fxhash/platform-overview/redeemables": {
+  "file": "collecting-on-fxhash__platform-overview__redeemables.html",
+  "wayback_url": "https://web.archive.org/web/20260311083531/https://docs.fxhash.xyz/collecting-on-fxhash/platform-overview/redeemables"
+ },
+ "/collecting-on-fxhash/collector-tips": {
+  "file": "collecting-on-fxhash__collector-tips.html",
+  "wayback_url": "https://web.archive.org/web/20260312091203/https://docs.fxhash.xyz/collecting-on-fxhash/collector-tips"
+ },
+ "/collecting-on-fxhash/collector-tips/getting-started-as-a-collector": {
+  "file": "collecting-on-fxhash__collector-tips__getting-started-as-a-collector.html",
+  "wayback_url": "https://web.archive.org/web/20260311190006/https://docs.fxhash.xyz/collecting-on-fxhash/collector-tips/getting-started-as-a-collector"
+ },
+ "/collecting-on-fxhash/collector-tips/token-discovery-tools": {
+  "file": "collecting-on-fxhash__collector-tips__token-discovery-tools.html",
+  "wayback_url": "https://web.archive.org/web/20260312112650/https://docs.fxhash.xyz/collecting-on-fxhash/collector-tips/token-discovery-tools"
+ },
+ "/collecting-on-fxhash/collector-tips/towards-curation": {
+  "file": "collecting-on-fxhash__collector-tips__towards-curation.html",
+  "wayback_url": "https://web.archive.org/web/20260310185428/https://docs.fxhash.xyz/collecting-on-fxhash/collector-tips/towards-curation"
+ },
+ "/collecting-on-fxhash/collector-tips/market-analysis-and-dynamics": {
+  "file": "collecting-on-fxhash__collector-tips__market-analysis-and-dynamics.html",
+  "wayback_url": "https://web.archive.org/web/20260313230936/https://docs.fxhash.xyz/collecting-on-fxhash/collector-tips/market-analysis-and-dynamics"
+ },
+ "/knowledge-base/quickstart": {
+  "file": "knowledge-base__quickstart.html",
+  "wayback_url": "https://web.archive.org/web/20260310123306/https://docs.fxhash.xyz/knowledge-base/quickstart"
+ },
+ "/knowledge-base/quickstart/decentralization-and-blockchain-tech": {
+  "file": "knowledge-base__quickstart__decentralization-and-blockchain-tech.html",
+  "wayback_url": "https://web.archive.org/web/20260311064427/https://docs.fxhash.xyz/knowledge-base/quickstart/decentralization-and-blockchain-tech"
+ },
+ "/knowledge-base/quickstart/multi-chain-integration": {
+  "file": "knowledge-base__quickstart__multi-chain-integration.html",
+  "wayback_url": "https://web.archive.org/web/20260313232838/https://docs.fxhash.xyz/knowledge-base/quickstart/multi-chain-integration"
+ },
+ "/knowledge-base/quickstart/nfts-and-smart-contracts": {
+  "file": "knowledge-base__quickstart__nfts-and-smart-contracts.html",
+  "wayback_url": "https://web.archive.org/web/20260313223514/https://docs.fxhash.xyz/knowledge-base/quickstart/nfts-and-smart-contracts"
+ },
+ "/knowledge-base/quickstart/web3-storage": {
+  "file": "knowledge-base__quickstart__web3-storage.html",
+  "wayback_url": "https://web.archive.org/web/20260311045641/https://docs.fxhash.xyz/knowledge-base/quickstart/web3-storage"
+ },
+ "/knowledge-base/quickstart/web3-storage/ipfs": {
+  "file": "knowledge-base__quickstart__web3-storage__ipfs.md",
+  "wayback_url": "https://web.archive.org/web/20260411145917/https://docs.fxhash.xyz/knowledge-base/quickstart/web3-storage/ipfs"
+ },
+ "/knowledge-base/quickstart/web3-storage/onchfs": {
+  "file": "knowledge-base__quickstart__web3-storage__onchfs.md",
+  "wayback_url": "https://web.archive.org/web/20260411150038/https://docs.fxhash.xyz/knowledge-base/quickstart/web3-storage/onchfs"
+ },
+ "/knowledge-base/quickstart/what-is-generative-art": {
+  "file": "knowledge-base__quickstart__what-is-generative-art.html",
+  "wayback_url": "https://web.archive.org/web/20260310130411/https://docs.fxhash.xyz/knowledge-base/quickstart/what-is-generative-art"
+ },
+ "/knowledge-base/quickstart/genart-on-the-blockchain": {
+  "file": "knowledge-base__quickstart__genart-on-the-blockchain.html",
+  "wayback_url": "https://web.archive.org/web/20260313231459/https://docs.fxhash.xyz/knowledge-base/quickstart/genart-on-the-blockchain"
+ },
+ "/knowledge-base/onboarding": {
+  "file": "knowledge-base__onboarding.html",
+  "wayback_url": "https://web.archive.org/web/20260313224141/https://docs.fxhash.xyz/knowledge-base/onboarding"
+ },
+ "/knowledge-base/onboarding/creating-a-wallet": {
+  "file": "knowledge-base__onboarding__creating-a-wallet.html",
+  "wayback_url": "https://web.archive.org/web/20260311092756/https://docs.fxhash.xyz/knowledge-base/onboarding/creating-a-wallet"
+ },
+ "/knowledge-base/onboarding/creating-an-account": {
+  "file": "knowledge-base__onboarding__creating-an-account.html",
+  "wayback_url": "https://web.archive.org/web/20260311080021/https://docs.fxhash.xyz/knowledge-base/onboarding/creating-an-account"
+ },
+ "/knowledge-base/onboarding/adding-funds-to-your-wallet": {
+  "file": "knowledge-base__onboarding__adding-funds-to-your-wallet.md",
+  "wayback_url": "https://web.archive.org/web/20260411150846/https://docs.fxhash.xyz/knowledge-base/onboarding/adding-funds-to-your-wallet"
+ },
+ "/knowledge-base/onboarding/account-verification": {
+  "file": "knowledge-base__onboarding__account-verification.html",
+  "wayback_url": "https://web.archive.org/web/20260312105002/https://docs.fxhash.xyz/knowledge-base/onboarding/account-verification"
+ },
+ "/knowledge-base/onboarding/platform-moderation": {
+  "file": "knowledge-base__onboarding__platform-moderation.html",
+  "wayback_url": "https://web.archive.org/web/20260312183028/https://docs.fxhash.xyz/knowledge-base/onboarding/platform-moderation"
+ },
+ "/knowledge-base/policies-and-guidelines": {
+  "file": "knowledge-base__policies-and-guidelines.html",
+  "wayback_url": "https://web.archive.org/web/20260310162531/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines"
+ },
+ "/knowledge-base/policies-and-guidelines/code-of-conduct": {
+  "file": "knowledge-base__policies-and-guidelines__code-of-conduct.html",
+  "wayback_url": "https://web.archive.org/web/20260310160220/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines/code-of-conduct"
+ },
+ "/knowledge-base/policies-and-guidelines/code-of-conduct/artists-code-of-conduct": {
+  "file": "knowledge-base__policies-and-guidelines__code-of-conduct__artists-code-of-conduct.md",
+  "wayback_url": "https://web.archive.org/web/20260411142030/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines/code-of-conduct/artists-code-of-conduct"
+ },
+ "/knowledge-base/policies-and-guidelines/code-of-conduct/collectors-code-of-conduct": {
+  "file": "knowledge-base__policies-and-guidelines__code-of-conduct__collectors-code-of-conduct.html",
+  "wayback_url": "https://web.archive.org/web/20260217050437/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines/code-of-conduct/collectors-code-of-conduct"
+ },
+ "/knowledge-base/policies-and-guidelines/terms-and-conditions": {
+  "file": "knowledge-base__policies-and-guidelines__terms-and-conditions.html",
+  "wayback_url": "https://web.archive.org/web/20260311065829/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines/terms-and-conditions"
+ },
+ "/knowledge-base/policies-and-guidelines/privacy-policy": {
+  "file": "knowledge-base__policies-and-guidelines__privacy-policy.html",
+  "wayback_url": "https://web.archive.org/web/20260312010012/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines/privacy-policy"
+ },
+ "/knowledge-base/policies-and-guidelines/safety-notes": {
+  "file": "knowledge-base__policies-and-guidelines__safety-notes.html",
+  "wayback_url": "https://web.archive.org/web/20260313224635/https://docs.fxhash.xyz/knowledge-base/policies-and-guidelines/safety-notes"
+ },
+ "/onchfs": {
+  "file": "onchfs.html",
+  "wayback_url": "https://web.archive.org/web/20260312003648/https://docs.fxhash.xyz/onchfs"
+ },
+ "/onchfs/what-is-onchfs": {
+  "file": "onchfs__what-is-onchfs.html",
+  "wayback_url": "https://web.archive.org/web/20260311044836/https://docs.fxhash.xyz/onchfs/what-is-onchfs"
+ },
+ "/onchfs/motivations": {
+  "file": "onchfs__motivations.html",
+  "wayback_url": "https://web.archive.org/web/20260310142521/https://docs.fxhash.xyz/onchfs/motivations"
+ },
+ "/onchfs/system-overview": {
+  "file": "onchfs__system-overview.html",
+  "wayback_url": "https://web.archive.org/web/20260313232437/https://docs.fxhash.xyz/onchfs/system-overview"
+ },
+ "/onchfs/cross-chain-referencing": {
+  "file": "onchfs__cross-chain-referencing.html",
+  "wayback_url": "https://web.archive.org/web/20260312090518/https://docs.fxhash.xyz/onchfs/cross-chain-referencing"
+ },
+ "/onchfs/limitations": {
+  "file": "onchfs__limitations.html",
+  "wayback_url": "https://web.archive.org/web/20260311185929/https://docs.fxhash.xyz/onchfs/limitations"
+ },
+ "/onchfs/references": {
+  "file": "onchfs__references.html",
+  "wayback_url": "https://web.archive.org/web/20260312034456/https://docs.fxhash.xyz/onchfs/references"
+ }
+}

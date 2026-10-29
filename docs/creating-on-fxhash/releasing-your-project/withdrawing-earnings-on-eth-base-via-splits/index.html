@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-root="../../../" data-page="creating-on-fxhash/releasing-your-project/withdrawing-earnings-on-eth-base-via-splits/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Withdrawing Earnings on ETH/Base via splits · fxhash docs (archive)</title>
+<meta name="description" content="This section provides an overview of how to withdraw earnings received from ETH &amp;amp; Base fxhash projects, as well as an overview of the Splits smart contract app that’s used for this purpose.">
+<meta property="og:title" content="Withdrawing Earnings on ETH/Base via splits · fxhash docs (archive)">
+<meta property="og:description" content="This section provides an overview of how to withdraw earnings received from ETH &amp;amp; Base fxhash projects, as well as an overview of the Splits smart contract app that’s used for this purpose.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111113'/%3E%3Cpath d='M10 9h12M10 16h12M10 23h7' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="archive-bar"><p><strong>Archived copy</strong> of docs.fxhash.xyz, restored from the
+<a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot of 13 March 2026</a>.
+<span class="archive-extra">Preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a> ·
+<a href="../../../about/">About this archive</a></span></p></div>
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="brand" href="../../../"><span class="brand-name">fxhash docs</span><span class="brand-tag">archive</span></a>
+  <div class="search" role="search">
+    <span class="search-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+    <input id="search-input" type="search" placeholder="Search the docs" autocomplete="off" spellcheck="false"
+      aria-label="Search the documentation" aria-controls="search-results" aria-expanded="false">
+    <kbd class="search-key" aria-hidden="true">/</kbd>
+    <div id="search-results" class="search-results" role="listbox" hidden></div>
+  </div>
+  <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</header>
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Documentation"><div class="nav-group"><ul><li><a href="../../../">Docs Overview</a></li><li><a href="../../../quickstart-guide/">Quickstart Guide</a></li></ul></div>
+<div class="nav-group"><p class="nav-label">Creating on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../../project-setup-and-development/">Project Setup &amp; Development</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Project Setup &amp; Development"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../project-setup-and-development/project-structure/">Project Structure</a></li><li><a href="../../project-setup-and-development/project-template/">Project Template</a></li><li><a href="../../project-setup-and-development/cli-setup/">CLI Setup</a></li><li><a href="../../project-setup-and-development/cli-reference/">CLI Reference</a></li><li><a href="../../project-setup-and-development/fxlens/">fxlens</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../fxhash-api/">fxhash API</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash API"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../fxhash-api/api-overview/">API Overview</a></li><li><a href="../../fxhash-api/api-reference/">API Reference</a></li><li><a href="../../fxhash-api/fxparams-module/">fxparams module</a></li><li><a href="../../fxhash-api/fxparams-api-reference/">fxparams API Reference</a></li><li><a href="../../fxhash-api/parameter-definition-specs/">Parameter Definition Specs</a></li><li><a href="../../fxhash-api/capture-contexts-and-preview-settings/">Capture Contexts &amp; Preview Settings</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../programming-open-form-genart/">Programming Open-form Genart</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Programming Open-form Genart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../programming-open-form-genart/open-form-art-coin-mechanics-and-economics/">Open-form ↔ Art Coin: Mechanics &amp; Economics</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../genart-in-the-browser/">Genart in the Browser</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Genart in the Browser"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../genart-in-the-browser/canvas-element-and-api/">Canvas element &amp; API</a></li><li><a href="../../genart-in-the-browser/including-libraries/">Including Libraries</a></li><li><a href="../../genart-in-the-browser/responsive-browser-projects/">Responsive Browser Projects</a></li><li><a href="../../genart-in-the-browser/deterministic-randomness/">Deterministic Randomness</a></li><li><a href="../../genart-in-the-browser/user-input-and-media-exports/">User Input &amp; Media Exports</a></li><li><a href="../../genart-in-the-browser/testing-browser-compatibility/">Testing Browser Compatibility</a></li></ul></li><li class="has-children open"><div class="nav-row"><a href="../">Releasing your Project</a><button class="nav-toggle" type="button" aria-expanded="true" aria-label="Show pages in Releasing your Project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../minting-interface-walkthrough/">Minting Interface Walkthrough</a></li><li><a href="../pricing-and-supply/">Pricing and Supply</a></li><li><a href="../reserves-and-allow-lists/">Reserves &amp; Allow Lists</a></li><li><a href="../licensing-your-project/">Licensing your Project</a></li><li><a href="../collaborative-projects/">Collaborative Projects</a></li><li><a href="./" aria-current="page">Withdrawing Earnings on ETH/Base via splits</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Collecting on fxhash</p><ul><li class="has-children"><div class="nav-row"><a href="../../../collecting-on-fxhash/platform-overview/">Platform Overview</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Platform Overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../collecting-on-fxhash/platform-overview/primary-market/">Primary Market</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/secondary-market/">Secondary Market</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/fx-params-and-the-ticketing-system/">fx(params) &amp; the Ticketing System</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/allow-lists-and-reserves/">Allow Lists &amp; Reserves</a></li><li><a href="../../../collecting-on-fxhash/platform-overview/redeemables/">Redeemables</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../collecting-on-fxhash/collector-tips/">Collector Tips</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Collector Tips"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../collecting-on-fxhash/collector-tips/getting-started-as-a-collector/">Getting Started as a Collector</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/token-discovery-tools/">Token Discovery Tools</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/towards-curation/">Towards Curation</a></li><li><a href="../../../collecting-on-fxhash/collector-tips/market-analysis-and-dynamics/">Market Analysis &amp; Dynamics</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Knowledge Base</p><ul><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/quickstart/">fxhash &amp; Web3</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in fxhash &amp; Web3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/quickstart/decentralization-and-blockchain-tech/">Decentralization &amp; Blockchain Tech</a></li><li><a href="../../../knowledge-base/quickstart/multi-chain-integration/">Multi-Chain Integration</a></li><li><a href="../../../knowledge-base/quickstart/nfts-and-smart-contracts/">NFTs &amp; Smart Contracts</a></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/quickstart/web3-storage/">Web3 Storage</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Web3 Storage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/quickstart/web3-storage/ipfs/">IPFS</a></li><li><a href="../../../knowledge-base/quickstart/web3-storage/onchfs/">ONCHFS</a></li></ul></li><li><a href="../../../knowledge-base/quickstart/what-is-generative-art/">What is Generative Art?</a></li><li><a href="../../../knowledge-base/quickstart/genart-on-the-blockchain/">Genart on the Blockchain</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/onboarding/">Onboarding</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Onboarding"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/onboarding/creating-a-wallet/">Creating a Wallet</a></li><li><a href="../../../knowledge-base/onboarding/creating-an-account/">Creating an Account</a></li><li><a href="../../../knowledge-base/onboarding/adding-funds-to-your-wallet/">Adding Funds to Your Wallet</a></li><li><a href="../../../knowledge-base/onboarding/account-verification/">Account Verification</a></li><li><a href="../../../knowledge-base/onboarding/platform-moderation/">Platform Moderation</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/policies-and-guidelines/">Policies &amp; Guidelines</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Policies &amp; Guidelines"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li class="has-children"><div class="nav-row"><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/">Code of Conduct</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in Code of Conduct"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/artists-code-of-conduct/">Artists&#x27; Code of Conduct</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/code-of-conduct/collectors-code-of-conduct/">Collector&#x27;s Code of Conduct</a></li></ul></li><li><a href="../../../knowledge-base/policies-and-guidelines/terms-and-conditions/">Terms and Conditions</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/privacy-policy/">Privacy Policy</a></li><li><a href="../../../knowledge-base/policies-and-guidelines/safety-notes/">Safety Notes</a></li></ul></li><li class="has-children"><div class="nav-row"><a href="../../../onchfs/">ONCHFS</a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Show pages in ONCHFS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div><ul><li><a href="../../../onchfs/what-is-onchfs/">What is ONCHFS?</a></li><li><a href="../../../onchfs/motivations/">Motivations</a></li><li><a href="../../../onchfs/system-overview/">System Overview</a></li><li><a href="../../../onchfs/cross-chain-referencing/">Cross-chain Referencing</a></li><li><a href="../../../onchfs/limitations/">Limitations</a></li><li><a href="../../../onchfs/references/">References</a></li></ul></li></ul></div>
+<div class="nav-group"><p class="nav-label">Find us on Social Media</p><ul><li><a href="https://x.com/fx_hash_" target="_blank" rel="noopener">X (Twitter) <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://warpcast.com/fxhash" target="_blank" rel="noopener">Farcaster <span class="ext" aria-hidden="true">↗</span></a></li><li><a href="https://discord.gg/fxhash-900333075509149767" target="_blank" rel="noopener">Join the Discord <span class="ext" aria-hidden="true">↗</span></a></li></ul></div>
+<div class="nav-group nav-meta"><p class="nav-label">This archive</p><ul><li><a href="../../../about/">About this archive</a></li><li><a href="https://web.archive.org/web/20260313230640/https://docs.fxhash.xyz/" target="_blank" rel="noopener">Wayback Machine snapshot <span class="ext" aria-hidden="true">↗</span></a></li></ul></div></nav>
+  <div class="scrim" hidden></div>
+  <main id="content" class="main">
+    <nav class="crumbs" aria-label="Breadcrumb"><span>Creating on fxhash</span> <span class=sep>/</span> <a href="../">Releasing your Project</a></nav>
+    <article class="doc">
+      <header class="doc-head"><h1>Withdrawing Earnings on ETH/Base via splits</h1><p class="lead">This section provides an overview of how to withdraw earnings received from ETH &amp; Base fxhash projects, as well as an overview of the Splits smart contract app that’s used for this purpose.</p></header>
+      <p><em><strong>With the integration of mainnet ETH and the Base L2, fxhash started using a solution call Splits to optimize the fund distribution. TLDR: To receive your project earnings, log into</strong></em> <a href="https://app.splits.org/" target="_blank" rel="noopener"><em><strong>the splits app</strong></em></a> <em><strong>with the wallet that is supposed to receive the funds.</strong></em></p>
+<h2 id="about-splits.app-and-withdrawing-funds-on-eth">About <a href="http://Splits.app" target="_blank" rel="noopener">Splits.app</a> &amp; Withdrawing Funds on ETH<a class="anchor" href="#about-splits.app-and-withdrawing-funds-on-eth" aria-label="Link to this section">#</a></h2>
+<p>When publishing a project on mainnet ETH or the Base L2 network, funds received from the sale of the project’s editions do not directly/automatically get sent to your wallet, as you might be used to from releasing your projects on the Tezos side of fxhash - but rather get sent to a special contract that pools these funds from which they have to be manually withdrawn.</p>
+<p>fxhash leverages <a href="http://splits.app/" target="_blank" rel="noopener">Splits.app</a> as an out-of-the-box solution to this end: Splits is a smart contract suite that provides all of the necessary functionality to optimize fund distribution on Ethereum based networks:</p>
+<div class="callout callout-tip" role="note" aria-label="Tip"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div class="callout-body">
+<p><strong>About the Split Contracts:</strong> Split acts as an equity instrument by letting you define the percent of future value each recipient will earn. It's a payable smart contract that distributes all ETH &amp; ERC20 tokens it receives among recipients according to pre-set ownership percentages.</p>
+</div></div>
+<figure class="figure"><img src="../../../assets/img/aIhOxdAqr1744YtaXMAo-Untitled.webp" alt="If you’re curious to learn more about the technical details of these smart contracts work, you can explore the official Splits(https://docs.splits.org/core/split) docs here." width="1600" height="665" loading="lazy" decoding="async"><figcaption>If you’re curious to learn more about the technical details of these smart contracts work, you can explore the official <a href="https://docs.splits.org/core/split" target="_blank" rel="noopener">Splits</a> docs here.</figcaption></figure>
+<p>If you have an fxhash project on ETH/Base, your fxhash profile should show you a button under your connected Eth wallet address, from which you can withdraw the received funds:</p>
+<figure class="figure"><img src="../../../assets/img/M3eWFShFbzNC5mlNvjGp-Screenshot_2024-07-24_at_11.54.14.webp" alt="" width="1600" height="816" loading="lazy" decoding="async"></figure>
+<p>I should also show up in the your <a href="https://app.splits.org/" target="_blank" rel="noopener">Splits Dashboard</a> when you sync with the same wallet that you released the project under, where you can initiate the same withdrawal action.</p>
+<h2 id="splits-for-collaborative-projects">Splits for Collaborative Projects<a class="anchor" href="#splits-for-collaborative-projects" aria-label="Link to this section">#</a></h2>
+<p>Splits is also very convenient for collaborative projects, as it essentially streamlines the distribution of earnings between the involved parties - here’s an example for this, the project Week after Week, a collaboration between the WTBS team and the generative artist Alessandro Fiore:</p>
+<figure class="figure"><img src="../../../assets/img/p1VlHEc7HqHu4wNvqgl6-Screenshot_2024-07-23_at_18.10.33.webp" alt="" width="1600" height="1367" loading="lazy" decoding="async"></figure>
+<p>Each collaborative fxhash project on Eth will have its own page/view over on the Splits app that visualizes how the funds are distributed among the recipients, and wether or not there currently are funds to be withdrawn.</p>
+<p>The same is true for royalties generated from secondary sales of the minted editions, they are pooled under their own Split and can be viewed separately:</p>
+<figure class="figure"><img src="../../../assets/img/q0Gn7F7kih5QzrZRNZni-Screenshot_2024-07-24_at_10.58.42.webp" alt="" width="1600" height="1392" loading="lazy" decoding="async"></figure>
+<p>Clicking on the “Distribute Balance” will then prompt if you want to send the pooled funds to the involved parties, and optionally if you want to also directly withdraw them:</p>
+<figure class="figure"><img src="../../../assets/img/OnnHvs0u62FUW9VaE9Nw-Screenshot_2024-07-24_at_10.59.17.webp" alt="" width="1600" height="775" loading="lazy" decoding="async"></figure>
+<p>Some noteworthy points about the Split contract here:</p>
+<ul>
+<li><strong>Withdrawal of the funds can be initiated by any party</strong>. It can be either one of the involved creators, or even another third party [is this accurate?]. Naturally, the funds will always only be sent to the addresses that are stored by the smart contract.</li>
+<li><strong>Splits are payable contracts.</strong> This means that splits ****can received funds and tokens similar to how a regular wallet can receive assets. Withdrawing them is optional.</li>
+</ul>
+<div class="callout callout-warning" role="note" aria-label="Warning"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></span><div class="callout-body">
+<p>Always be cautious when handling unknown assets, the sale thereof might be malicious. Check the Safety and Security section of the docs for more info.</p>
+</div></div>
+<h2 id="manually-withdrawing-from-splits">Manually Withdrawing from Splits<a class="anchor" href="#manually-withdrawing-from-splits" aria-label="Link to this section">#</a></h2>
+<p>In the case of an outage of some sort, it is also possible to withdraw the funds manually from the contract, which has to be effectuated from the <a href="http://etherscan.io/" target="_blank" rel="noopener">Etherscan.io</a> website (Etherscan is the primary blockchain explorer for ethereum).</p>
+<p><strong>The steps for this on mainnet ETH are the following:</strong></p>
+<ol>
+<li>
+<p>Navigate to <a href="http://etherscan.io/" target="_blank" rel="noopener">Etherscan.io</a></p>
+</li>
+<li>
+<p>In the search bar paste one of the following fxhash minter contract addresses - depending on which sales method you have used:</p>
+<ol>
+<li><strong>dutch_auction_minter_v1:</strong> 0x1bC736a2b144096a4752534C557D7E6C311CcAF1</li>
+<li><strong>fixed_price_minter_v1:</strong> 0xB645cFfD9bFB93c2c181d5Be0D6a8C1d81C2aEf3</li>
+</ol>
+</li>
+<li>
+<p>It will show you a dedicated page for the contract address, under which you should see a number of actions.</p>
+<figure class="figure"><img src="../../../assets/img/eZIgVXL7B0s69l2qp6Qm-Untitled_1.webp" alt="" width="1600" height="858" loading="lazy" decoding="async"></figure>
+</li>
+<li>
+<p>Click on the “Contract” button.</p>
+</li>
+<li>
+<p>You should a new view that has an option called “Write Contract”</p>
+<figure class="figure"><img src="../../../assets/img/PVCc6oodUOBxxdpnmqaP-Untitled_2.webp" alt="" width="1600" height="700" loading="lazy" decoding="async"></figure>
+</li>
+<li>
+<p>This will reveal a list of actions that you can perform - in this case we care about the very last one #12, titled “withdraw”</p>
+<figure class="figure"><img src="../../../assets/img/3pBjMw5TuC3Ns3DQezz5-Untitled_3.webp" alt="" width="1600" height="850" loading="lazy" decoding="async"></figure>
+</li>
+<li>
+<p>Clicking on withdraw will then reveal a field into which you need to paste the token address of the project’s funds that you want to withdraw:</p>
+<figure class="figure"><img src="../../../assets/img/NPJ9w54peS0NY3gt8hFe-Screenshot_2024-07-24_at_11.42.17.webp" alt="" width="1600" height="277" loading="lazy" decoding="async"></figure>
+</li>
+<li>
+<p>You can find your token’s address over on its fxhash page - example:</p>
+<figure class="figure"><img src="../../../assets/img/DWth15QDabpVMuMJj60n-Untitled_4.webp" alt="" width="1600" height="631" loading="lazy" decoding="async"></figure>
+</li>
+<li>
+<p>You also need to sync your wallet with <a href="http://etherscan.io/" target="_blank" rel="noopener">Etherscan.io</a> before you can effectuate the withdraw action - there’s a little button titled “Connect to Web3” that lets you do this:</p>
+<figure class="figure"><img src="../../../assets/img/lv70LSqWlVAQX1QNz1uh-Screenshot_2024-07-24_at_11.46.03.webp" alt="" width="306" height="88" loading="lazy" decoding="async"></figure>
+<figure class="figure"><img src="../../../assets/img/HL2o2GFgAoUVcIOaIkQ9-Screenshot_2024-07-24_at_11.46.11.webp" alt="" width="478" height="84" loading="lazy" decoding="async"></figure>
+</li>
+</ol>
+<div class="callout callout-warning" role="note" aria-label="Warning"><span class="callout-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></span><div class="callout-body">
+<p>For tokens on the Base L2 you need to do these same steps, but via the [Basescan.io](http://basescan.io/) website rather than Etherscan.</p>
+<p>The contract addresses for the fxhash minters are different in this case:</p>
+<ul>
+<li><strong>dutch_auction_minter_v1</strong>: 0x9667a1Cf26223c9de22207DD93cfEEc9237b8f4E</li>
+<li><strong>fixed_price_minter_v1</strong>: 0x4bDcaC532143d8d35ed759189EE22E3704580b9D</li>
+</ul>
+</div></div>
+
+    </article>
+    <nav class="pager" aria-label="Pagination"><a class="pager-prev" href="../collaborative-projects/"><span>Previous</span>Collaborative Projects</a><a class="pager-next" href="../../../collecting-on-fxhash/platform-overview/"><span>Next</span>Platform Overview</a></nav>
+    <footer class="provenance"><p>Originally published at <a href="https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/withdrawing-earnings-on-eth-base-via-splits" target="_blank" rel="noopener">docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/withdrawing-earnings-on-eth-base-via-splits</a>. Restored from the <a href="https://web.archive.org/web/20260311155846/https://docs.fxhash.xyz/creating-on-fxhash/releasing-your-project/withdrawing-earnings-on-eth-base-via-splits" target="_blank" rel="noopener">Wayback Machine capture of 2026-03-11</a>.</p><p>Archive preserved by <a href="https://www.gorillasun.de/" target="_blank" rel="noopener">Gorilla Sun</a>.</p></footer>
+  </main>
+  <aside class="toc" aria-label="On this page"><p class="toc-label">On this page</p><ul><li class="toc-l0"><a href="#about-splits.app-and-withdrawing-funds-on-eth">About Splits.app &amp; Withdrawing Funds on ETH</a></li><li class="toc-l0"><a href="#splits-for-collaborative-projects">Splits for Collaborative Projects</a></li><li class="toc-l0"><a href="#manually-withdrawing-from-splits">Manually Withdrawing from Splits</a></li></ul></aside>
+</div>
+<div class="lightbox" hidden><img alt=""></div>
+<script src="../../../assets/site.js" defer></script>
+</body>
+</html>
